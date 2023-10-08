@@ -1,0 +1,3838 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    Mungeryang写字的地方
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="Mungeryang&#39;s Writting home">
+<meta name="description" content="Share my technical route learning, reading notes, and life essays">
+<meta name="keywords" content="book,code,life">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://Mungeryang.github.io/styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+        
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                <!--点击特效-->
+                <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
+                
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://Mungeryang.github.io">
+                    Mungeryang写字的地方
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/">
+                        扉页
+                    </a>
+                    
+                    <a class="menu-item" href="https://Mungeryang.github.io/archives">
+                        目录
+                    </a>
+                    
+                    <a class="menu-item" href="https://Mungeryang.github.io/tags">
+                        技术文集
+                    </a>
+                    
+                    <a class="menu-item" href="https://Mungeryang.github.io/tags">
+                        读书笔记
+                    </a>
+                    
+                    <a class="menu-item" href="https://Mungeryang.github.io/tags">
+                        生活随笔
+                    </a>
+                    
+                    <a class="menu-item" href="/post/about">
+                        About me
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1696728951294" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://Mungeryang.github.io">
+                            Mungeryang写字的地方
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1696728951294" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/">
+                            扉页
+                        </a>
+                        
+                        <a class="menu-item" href="https://Mungeryang.github.io/archives">
+                            目录
+                        </a>
+                        
+                        <a class="menu-item" href="https://Mungeryang.github.io/tags">
+                            技术文集
+                        </a>
+                        
+                        <a class="menu-item" href="https://Mungeryang.github.io/tags">
+                            读书笔记
+                        </a>
+                        
+                        <a class="menu-item" href="https://Mungeryang.github.io/tags">
+                            生活随笔
+                        </a>
+                        
+                        <a class="menu-item" href="/post/about">
+                            About me
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+
+
+    <script>
+        (function(a, h, g, f, e, d, c, b) {
+            b = function() {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function() {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "slim",
+            location: "WWEFQFPJZ7T8",
+            geolocation: true,
+            language: "auto",
+            unit: "c",
+            theme: "auto",
+            token: "61bcc333-3305-4728-9465-6785274bb0a3",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+    
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                 C/C++  FOR EVERYONE  
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        Mungeryang写字的地方
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2023-09-04</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">114.7
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">26990</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://Mungeryang.github.io/tag/tech/">技术文集</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                        <div class="post-content">
+                            <figure data-type="image" tabindex="1"><img src="https://Mungeryang.github.io/post-images/1693834788688.jpeg" alt="" loading="lazy"></figure>
+<blockquote>
+<center>加州大学圣克鲁兹分校;杨桂淼&copy; 心水总结&trade;
+</blockquote>
+<blockquote>
+<center>你来的太晚了，但我转念一想，你来的又太及时了。———董宇辉
+</blockquote>
+<h2 id="运算符优先级">运算符优先级</h2>
+<table>
+<thead>
+<tr>
+<th><strong>优先级</strong></th>
+<th><strong>运算符</strong></th>
+<th><strong>名称或含义</strong></th>
+<th><strong>使用形式</strong></th>
+<th><strong>结合方向</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td><strong>[ ]</strong></td>
+<td>数组下标</td>
+<td>数组名[常量表达式]</td>
+<td>左到右</td>
+<td>–</td>
+</tr>
+<tr>
+<td><strong>()</strong></td>
+<td>圆括号</td>
+<td>(表达式）/函数名(形参表)</td>
+<td>–</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>.</strong></td>
+<td>成员选择（对象）</td>
+<td>对象.成员名</td>
+<td>–</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>-&gt;</strong></td>
+<td>成员选择（指针）</td>
+<td>对象指针-&gt;成员名</td>
+<td>–</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td><strong>-</strong></td>
+<td>负号运算符</td>
+<td>-表达式</td>
+<td><strong>右到左</strong></td>
+<td>单目运算符</td>
+</tr>
+<tr>
+<td><strong>~</strong></td>
+<td>按位取反运算符</td>
+<td>~表达式</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>++</strong></td>
+<td>自增运算符</td>
+<td>++变量名/变量名++</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>–</strong></td>
+<td>自减运算符</td>
+<td>–变量名/变量名–</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>*****</td>
+<td>取值运算符</td>
+<td>*指针变量</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>&amp;</strong></td>
+<td>取地址运算符</td>
+<td>&amp;变量名</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>!</strong></td>
+<td>逻辑非运算符</td>
+<td>!表达式</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>(类型)</strong></td>
+<td>强制类型转换</td>
+<td>(数据类型)表达式</td>
+<td>–</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>sizeof</strong></td>
+<td>长度运算符</td>
+<td>sizeof(表达式)</td>
+<td>–</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td><strong>/</strong></td>
+<td>除</td>
+<td>表达式/表达式</td>
+<td>左到右</td>
+<td>双目运算符</td>
+</tr>
+<tr>
+<td>*****</td>
+<td>乘</td>
+<td>表达式*表达式</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>%</strong></td>
+<td>余数（取模）</td>
+<td>整型表达式%整型表达式</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td><strong>+</strong></td>
+<td>加</td>
+<td>表达式+表达式</td>
+<td>左到右</td>
+<td>双目运算符</td>
+</tr>
+<tr>
+<td><strong>-</strong></td>
+<td>减</td>
+<td>表达式-表达式</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>&lt;&lt;</strong></td>
+<td>左移</td>
+<td>变量&lt;&lt;表达式</td>
+<td>左到右</td>
+<td>双目运算符</td>
+</tr>
+<tr>
+<td><strong>&gt;&gt;</strong></td>
+<td>右移</td>
+<td>变量&gt;&gt;表达式</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td><strong>&gt;</strong></td>
+<td>大于</td>
+<td>表达式&gt;表达式</td>
+<td>左到右</td>
+<td>双目运算符</td>
+</tr>
+<tr>
+<td><strong>&gt;=</strong></td>
+<td>大于等于</td>
+<td>表达式&gt;=表达式</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>&lt;</strong></td>
+<td>小于</td>
+<td>表达式&lt;表达式</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>&lt;=</strong></td>
+<td>小于等于</td>
+<td>表达式&lt;=表达式</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td><strong>==</strong></td>
+<td>等于</td>
+<td>表达式==表达式</td>
+<td>左到右</td>
+<td>双目运算符</td>
+</tr>
+<tr>
+<td><strong>！=</strong></td>
+<td>不等于</td>
+<td>表达式!= 表达式</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>8</strong></td>
+<td><strong>&amp;</strong></td>
+<td>按位与</td>
+<td>表达式&amp;表达式</td>
+<td>左到右</td>
+<td>双目运算符</td>
+</tr>
+<tr>
+<td><strong>9</strong></td>
+<td><strong>^</strong></td>
+<td>按位异或</td>
+<td>表达式^表达式</td>
+<td>左到右</td>
+<td>双目运算符</td>
+</tr>
+<tr>
+<td><strong>10</strong></td>
+<td><strong>|</strong></td>
+<td>按位或</td>
+<td>表达式|表达式</td>
+<td>左到右</td>
+<td>双目运算符</td>
+</tr>
+<tr>
+<td><strong>11</strong></td>
+<td><strong>&amp;&amp;</strong></td>
+<td>逻辑与</td>
+<td>表达式&amp;&amp;表达式</td>
+<td>左到右</td>
+<td>双目运算符</td>
+</tr>
+<tr>
+<td><strong>12</strong></td>
+<td><strong>||</strong></td>
+<td>逻辑或</td>
+<td>表达式||表达式</td>
+<td>左到右</td>
+<td>双目运算符</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>13</strong></td>
+<td><strong>? :</strong></td>
+<td>条件运算符</td>
+<td>表达式1?表达式2: 表达式3</td>
+<td><strong>右到左</strong></td>
+<td>三目运算符</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>14</strong></td>
+<td><strong>=</strong></td>
+<td>赋值运算符</td>
+<td>变量=表达式</td>
+<td><strong>右到左</strong></td>
+<td>–</td>
+</tr>
+<tr>
+<td><strong>/=</strong></td>
+<td>除后赋值</td>
+<td>变量/=表达式</td>
+<td>–</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>*<strong>=</strong></td>
+<td>乘后赋值</td>
+<td>变量*=表达式</td>
+<td>–</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>%=</strong></td>
+<td>取模后赋值</td>
+<td>变量%=表达式</td>
+<td>–</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>+=</strong></td>
+<td>加后赋值</td>
+<td>变量+=表达式</td>
+<td>–</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>-=</strong></td>
+<td>减后赋值</td>
+<td>变量-=表达式</td>
+<td>–</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>&lt;&lt;=</strong></td>
+<td>左移后赋值</td>
+<td>变量&lt;&lt;=表达式</td>
+<td>–</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>&gt;&gt;=</strong></td>
+<td>右移后赋值</td>
+<td>变量&gt;&gt;=表达式</td>
+<td>–</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>&amp;=</strong></td>
+<td>按位与后赋值</td>
+<td>变量&amp;=表达式</td>
+<td>–</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>^=</strong></td>
+<td>按位异或后赋值</td>
+<td>变量^=表达式</td>
+<td>–</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>|=</strong></td>
+<td>按位或后赋值</td>
+<td>变量|=表达式</td>
+<td>–</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>15</strong></td>
+<td><strong>，</strong></td>
+<td>逗号运算符</td>
+<td>表达式,表达式,…</td>
+<td>左到右</td>
+<td>–</td>
+</tr>
+</tbody>
+</table>
+<p>所以在定义并使用结构体指针的时候，不像调用普通的结构体那样struct.attribute,而是struct-&gt;attribute；就是因为运算符的优先级不同。</p>
+<h2 id="different-from-stdioh-and-standardio"><strong>Different from stdio.h and standard.io</strong></h2>
+<p>Standard I/O. The pre-process command brings in both printf and now scanf.</p>
+<p>Scanf is a basic routine for doing input.</p>
+<p>By default, most cases we will come from our keyboard.</p>
+<p><strong>PI.C</strong></p>
+<p>In our case, standard input is defaulted to the computer keyboard. Here we see another directive. It's called a defined directive.</p>
+<p>The define directive does an interesting thing. In our case, standard input is defaulted to the computer keyboard. Here we see another directive. It's called a defined directive. The define directive does an interesting thing.we want this to be documentation.we introduce a program, which is main. We begin with what's called the open brace for a compound statement. The first statement is a declaration statement.</p>
+<pre><code class="language-c">#include&lt;stdio.h&gt;
+
+//define后面不加分号
+#define PI 3.1415926
+
+int main(void){
+	
+	double area = 0.0,radius = 0.0;
+	printf(&quot;please input the radiuse:\n&quot;);
+	scanf(&quot;%lf&quot;, &amp;radius);
+	area = PI * radius * radius;
+	printf(&quot;area = %f&quot;,area);
+	
+	return 0;
+}
+</code></pre>
+<h2 id="introduction">Introduction</h2>
+<p>Output is a very important component of programming.</p>
+<h3 id="stdioh">stdio.h</h3>
+<p>we see stdio.h, and the .h is an extension that intent that means a header file, and that means that in this file which will be included automatically with our program. So it's called pre-processor because it happens before the C code is compiled.</p>
+<p>So extra code gets added, and that code is the code that we're going to <strong>need for doing printf</strong>. Without it the printf would be undeclared.</p>
+<h3 id="code-process">Code process</h3>
+<p><strong>int</strong> is a keyword meaning that the program <strong>returns</strong> an integer</p>
+<p><strong>Void</strong> is a keyword that would if it's used as a data type means it's an undefined data type, or in this case it means that the argument list is empty.</p>
+<h3 id="scanf"><strong>scanf</strong></h3>
+<p>if you don't fully understand it, the scanf, which gets us input.In this case, we want to look for the address of that variable,</p>
+<p>and addresses location in memory. Then here we do the computation. scanf() is found in  &lt;stdio.h&gt;;The &amp; sign means  “store at the location of variable&quot;.</p>
+<p>So it's very important, in your expressions, to know what domain you're in. By domain, I mean things like integer and double,</p>
+<p>because that's going to tell you what the arithmetic is being done in, and that arithmetic can affect the meaning of an operator, like divide. Divide can be an integer divide, if everything is integer, or it can be a floating point divided, if one of the arguments is floating point.</p>
+<p>在学习C语言时，常常会发现有的scanf()里需要&amp;，而有的不需要。</p>
+<ol>
+<li>当scanf函数后面接收的是一个地址的时候，此时不需要加“&amp;”-&gt;例如传入数组</li>
+<li>当sacnf函数后面接收的不是一个地址、而是实际变量的时候，此时需要加“&amp;”-&gt;例如传入单一变量</li>
+</ol>
+<p>printf输出格式控制：printf(“%([flags ] [width ] [.prec ] [hIL ])type”,var);</p>
+<p>对于格式字符串：以 %号开头，用于定义每个数据的输出格式：</p>
+<p>d	以十进制形式输出 带 符号整数（正数不输出符号）</p>
+<p>ld	输出长整型数</p>
+<p>o	以八进制形式输出 无 符号整数（不输出前缀0）</p>
+<p>x,X	以十六进制形式输出 无 符号整数（不输出前缀0x）</p>
+<p>u	以十进制形式输出 无 符号整数</p>
+<p>f	以小数形式输出单、双精度实数</p>
+<p>lf	按long double类型输出</p>
+<p>e,E	以指数形式输出单、双精度实数</p>
+<p>g,G	按数据精度以%f或%e中较短的输出宽度输出单、双精度实数</p>
+<p>c	输出单个字符</p>
+<p>s	输出字符串</p>
+<p>% [对齐方式] [输出最小宽度] 整数类型。对齐方式用默认为右对齐，若为&quot;-&quot;负号，则为左对齐；输出最小宽度n，若实际位数小于n，则补以空格或0。</p>
+<p>% [输出最小宽度] [ . 精度] 实数类型	最小宽度n，包括整数，小数点及小数部分的总位数，默认右对齐，前加负号为左对齐；精度m，若实际位数大于m，则四舍五入截去超过部分，一般实数默认输出6位。</p>
+<hr>
+<p>版权声明：本文为CSDN博主「亲亲Friends」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>
+原文链接：https://blog.csdn.net/u014261408/article/details/90139849</p>
+<p>版权声明：本文为CSDN博主「亲亲Friends」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。</p>
+<h2 id="lexical-elements-and-data-types">Lexical Elements and Data Types</h2>
+<h3 id="character-sets-and-tokens">Character sets and tokens</h3>
+<ol>
+<li>
+<p>A token can be an identifier</p>
+</li>
+<li>
+<p>main is a legal identifier</p>
+</li>
+<li>
+<p>A token can be punctuation such as ;</p>
+</li>
+<li>
+<p>A token can be an operator such as  + or /</p>
+</li>
+</ol>
+<h3 id="comments">Comments</h3>
+<p>It's important for documentation and readability. In order to be able to maintain or modify the program and understand its use, we want the program to be literate. So we could let say, add some more comments if we want, let me add some other comments here.</p>
+<h3 id="keywords">keywords</h3>
+<p>The table below lists all keywords reserved by the C language. When the current programming language is C or C++, these keywords cannot be abbreviated, used as variable names, or used as any other type of identifiers.</p>
+<table>
+<thead>
+<tr>
+<th><code>auto</code></th>
+<th><code>else</code></th>
+<th><code>long</code></th>
+<th><code>switch</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>break</code></td>
+<td><code>enum</code></td>
+<td><code>register</code></td>
+<td><code>typedef</code></td>
+</tr>
+<tr>
+<td><code>case</code></td>
+<td><code>extern</code></td>
+<td><code>return</code></td>
+<td><code>union</code></td>
+</tr>
+<tr>
+<td><code>char</code></td>
+<td><code>float</code></td>
+<td><code>short</code></td>
+<td><code>unsigned</code></td>
+</tr>
+<tr>
+<td><code>const</code></td>
+<td><code>for</code></td>
+<td><code>signed</code></td>
+<td><code>void</code></td>
+</tr>
+<tr>
+<td><code>continue</code></td>
+<td><code>goto</code></td>
+<td><code>sizeof</code></td>
+<td><code>volatile</code></td>
+</tr>
+<tr>
+<td><code>default</code></td>
+<td><code>if</code></td>
+<td><code>static</code></td>
+<td><code>while</code></td>
+</tr>
+<tr>
+<td><code>do</code></td>
+<td><code>int</code></td>
+<td><code>struct</code></td>
+<td><code>_Packed</code></td>
+</tr>
+<tr>
+<td><code>double</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://en.cppreference.com/w/c/language/arithmetic_types#Character_types"><strong>keywords</strong></a></p>
+<h3 id="identifiers">identifiers</h3>
+<p>23 my_dna is not an identifier because the first character of that sequence is a digit, so that's not allowed. So digit is not allowed anywhere but in the first character. Underscores and alphabet are allowed anywhere including the first characters.</p>
+<p>when you want something that's for counting, you can use i, j, and k. Also you frequently can use n as another underscored integer, those would all be good choices.</p>
+<h3 id="expression">expression</h3>
+<p>-&gt;<strong>自增自减的运算逻辑</strong></p>
+<p>a = 5 b = 7</p>
+<p><strong>++a + b++ = 13</strong></p>
+<p>short, long, and unsigned. Short it means use less data. Long means you use more, a bigger range. So short can mean a smaller range typically, you're using fewer bytes.</p>
+<p>If it was 2.0 divided by 3 or 2.0 divided by 3.0 or 2 divided by 3.0 where one of the arguments or both the arguments are double then indeed it would be in the floating point type. You would have a type of floater doubles and your result would be 0.666. So this mistake gets made often when you are thinking you want to do something like average over some integer data and you forget that dividing can be either an integer operation or a floating point operation, you can get a mistake.</p>
+<h3 id="list-of-escape-sequences-in-c">List of Escape Sequences in C</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Escape Sequence</th>
+<th style="text-align:center">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">\a</td>
+<td style="text-align:center">Alarm or Beep</td>
+</tr>
+<tr>
+<td style="text-align:center">\b</td>
+<td style="text-align:center">Backspace</td>
+</tr>
+<tr>
+<td style="text-align:center">\f</td>
+<td style="text-align:center">Form Feed</td>
+</tr>
+<tr>
+<td style="text-align:center">\n</td>
+<td style="text-align:center">New Line</td>
+</tr>
+<tr>
+<td style="text-align:center">\r</td>
+<td style="text-align:center">Carriage Return</td>
+</tr>
+<tr>
+<td style="text-align:center">\t</td>
+<td style="text-align:center">Tab (Horizontal)</td>
+</tr>
+<tr>
+<td style="text-align:center">\v</td>
+<td style="text-align:center">Vertical Tab</td>
+</tr>
+<tr>
+<td style="text-align:center">\</td>
+<td style="text-align:center">Backslash</td>
+</tr>
+<tr>
+<td style="text-align:center">'</td>
+<td style="text-align:center">Single Quote</td>
+</tr>
+<tr>
+<td style="text-align:center">&quot;</td>
+<td style="text-align:center">Double Quote</td>
+</tr>
+<tr>
+<td style="text-align:center">?</td>
+<td style="text-align:center">Question Mark</td>
+</tr>
+<tr>
+<td style="text-align:center">\nnn</td>
+<td style="text-align:center">octal number</td>
+</tr>
+<tr>
+<td style="text-align:center">\xhh</td>
+<td style="text-align:center">hexadecimal number</td>
+</tr>
+<tr>
+<td style="text-align:center">\0</td>
+<td style="text-align:center">Null</td>
+</tr>
+</tbody>
+</table>
+<h3 id="int-types">int types</h3>
+<p>On your typical modern machine, an int is stored in 32-bits. That's 32 zeros and ones and to see even worthwhile especially if you're going to go into computer science to learn how to work in binary.</p>
+<p>Now, when you're working with an end stored in 32-bits. Then what you can represent is limited and it's limited to plus or minus two billion, and I've written it out here explicitly. You can go positively up to 2,147, 436, 647 and your smallest number, your largest negative number, another way to put it is a 2,147,483,648. It's not symmetric because of the fancy way people represent integers on the machine. It's called a two's complement representation. Typically, the first bit is in fact the bit that affects how you interpret the sign.</p>
+<p>Short it means use less data. Long means you use more, a bigger range. So short can mean a smaller range typically, you're using fewer bytes. You'll see in a second when I write an example that from my machine short is <strong>two bytes</strong>, ordinary, int is <strong>four bytes</strong> as we've already said, and then long will be <strong>eight bytes</strong>.</p>
+<p>We can also use <strong>u or U</strong> and <strong>l or L</strong> to specify the type of an integer constant as an <strong>unsigned long int</strong>. 89ul - is of type unsigned long int.</p>
+<p>Unsigned Integers (often called &quot;uints&quot;) are just like integers (whole numbers) but have the property that they don't have a + or - sign associated with them. Thus they are always <strong>non-negative</strong> (zero or positive). We use uint's when we know the value we are counting will always be non-negative. For example, if we are counting the number of players in a game, we could use a uint because there will always be 0 or more players.</p>
+<p>The format specifiers are used in C for input and output purposes. Using this concept the compiler can understand that what type of data is in a variable during taking input using the scanf() function and printing using printf() function. Here is a list of format specifiers.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Format Specifier</th>
+<th style="text-align:center">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">%c</td>
+<td style="text-align:center">Character</td>
+</tr>
+<tr>
+<td style="text-align:center">%d</td>
+<td style="text-align:center">Signed integer</td>
+</tr>
+<tr>
+<td style="text-align:center">%e or %E</td>
+<td style="text-align:center">Scientific notation of floats</td>
+</tr>
+<tr>
+<td style="text-align:center">%f</td>
+<td style="text-align:center">Float values</td>
+</tr>
+<tr>
+<td style="text-align:center">%g or %G</td>
+<td style="text-align:center">Similar as %e or %E</td>
+</tr>
+<tr>
+<td style="text-align:center">%hi</td>
+<td style="text-align:center">Signed integer (short)</td>
+</tr>
+<tr>
+<td style="text-align:center">%hu</td>
+<td style="text-align:center">Unsigned Integer (short)</td>
+</tr>
+<tr>
+<td style="text-align:center">%i</td>
+<td style="text-align:center">Unsigned integer</td>
+</tr>
+<tr>
+<td style="text-align:center">%l or %ld or %li</td>
+<td style="text-align:center">Long</td>
+</tr>
+<tr>
+<td style="text-align:center">%lf</td>
+<td style="text-align:center">Double</td>
+</tr>
+<tr>
+<td style="text-align:center">%Lf</td>
+<td style="text-align:center">Long double</td>
+</tr>
+<tr>
+<td style="text-align:center">%lu</td>
+<td style="text-align:center">Unsigned int or unsigned long</td>
+</tr>
+<tr>
+<td style="text-align:center">%lli or %lld</td>
+<td style="text-align:center">Long long</td>
+</tr>
+<tr>
+<td style="text-align:center">%llu</td>
+<td style="text-align:center">Unsigned long long</td>
+</tr>
+<tr>
+<td style="text-align:center">%o</td>
+<td style="text-align:center">Octal representation</td>
+</tr>
+<tr>
+<td style="text-align:center">%p</td>
+<td style="text-align:center">Pointer</td>
+</tr>
+<tr>
+<td style="text-align:center">%s</td>
+<td style="text-align:center">String</td>
+</tr>
+<tr>
+<td style="text-align:center">%u</td>
+<td style="text-align:center">Unsigned int</td>
+</tr>
+<tr>
+<td style="text-align:center">%x or %X</td>
+<td style="text-align:center">Hexadecimal representation</td>
+</tr>
+<tr>
+<td style="text-align:center">%n</td>
+<td style="text-align:center">Prints nothing</td>
+</tr>
+<tr>
+<td style="text-align:center">%%</td>
+<td style="text-align:center">Prints % character</td>
+</tr>
+</tbody>
+</table>
+<h2 id="flow-of-control-and-simple-functions">Flow of control and simple functions</h2>
+<h3 id="the-conditional-statement-if-and-if-else">The conditional statement if and if-else</h3>
+<p>在处理0/1逻辑运算时，if与while语句的简写等价表达：</p>
+<pre><code class="language-c">if(a)与if(a!=0)等价；while(a)表示当a!=0时执行循环，其等价于while(a!=0)
+if(!a)与if(a==0)等价；while(!a)表示当a=0时执行循环，其等价于while(a==0)
+
+</code></pre>
+<p>when the first argument evaluates false, we needn't evaluate the second argument. So we avoid evaluating the second argument.</p>
+<p>That's called <strong>short circuit evaluation</strong>.</p>
+<p>true table:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>T</th>
+<th>F</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T</td>
+<td>T</td>
+<td>F</td>
+</tr>
+<tr>
+<td>F</td>
+<td>F</td>
+<td>F</td>
+</tr>
+</tbody>
+</table>
+<p>You should get out of it how to use an if-else. By the way, a simpler kind of statement is just an if, and the if-statement, you have if expression and then you execute the statement if it's true. So if you have an expression that evaluates to zero, then you omit the statement. Indeed you could have turned that if-else into two if-statements, but that would be not as elegant and also somewhat inefficient because you would be evaluating the relation speed less than 65 twice.</p>
+<h3 id="the-iterative-statement-while">The iterative statement while</h3>
+<p>What we do is recheck first to see if the expression is zero. If the expression is zero, the statement is not done. It's omitted and we just skip to whatever is next. We can think of that as false. Though really in C false is zero and true is non-zero. However, <strong>if the expression is non-zero</strong>, then we execute the statement that's sitting under the while. Then, we repeat. We go back and ask is the expression is zero we continue. That just keeps going until we see the expression is zero.</p>
+<p>函数原型：int getchar(void);           返回类型为int,参数为void		头文件：#include&lt;stdio.h&gt;</p>
+<p>返回值：getchar返回的是字符的ASCII码值（整数）。getchar在读取结束或者失败的时候，会返回EOF。(EOF意思是end of file,本质上是-1）</p>
+<p>读取方式：只能输入字符型,输入时遇到回车键才从缓冲区依次提取字符。</p>
+<p>结束输入的方式：以Enter结束输入（空格不结束），接受空格符。</p>
+<p>舍弃回车符的方法：以Enter结束输入时，接受空格，会舍弃最后的回车符。</p>
+<p>-&gt;while ((ch=getchar()) != 'EOF')</p>
+<p>getchar先读取一个字符放到ch里面去，如果这个字符不等于EOF，就进入循环，打印这个字符。当getchar读到文件末尾或者结束时，它会返回一个EOF，此时结束循环。</p>
+<p>The while loop expression	<strong>while((c = getchar()) !=  EOF)</strong>		is used to read a char from the input  until it sees the special value defined EOF.</p>
+<p>EOF，为End Of File的缩写，通常在文本的最后存在此字符表示资料结束。C语言中，EOF常被作为文件结束的标志。还有很多文件处理函数处错误后的返回值也是EOF，因此常被用来判断调用一个函数是否成功。</p>
+<h3 id="the-for-statement-and-its-while-analog">The for statement and its while analog</h3>
+<p>Keyword for expression 1; expression two ; and then expression 3.</p>
+<p>e1 is most typically used as an initializer, just like in our simple example. e2 is typically, well, that's always the terminating condition. So if it's going to work and it's going to be over a finite number of times, then this f determinate, that's where you can make some interesting mistakes, and get what's called an infinite loop. So this has to be tested. e3 is typically, again, this all typical, the typical use is either increment or decrement. So the terminating condition frequently involves mostly an integer, expression of variable and then incrementing that integer or decrementing it leads to a termination condition. think about i++ and ++i.</p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+int main() {
+   int i=5,j;
+   j=i++;
+   printf (&quot;\nafter postfix increment i=%d j=%d&quot;, i,j);
+   i=5;
+   j=++i;
+   printf (&quot;\n after prefix increment i=%d j=%d&quot;,i,j);
+   return 0;
+}
+</code></pre>
+<p>the output is:</p>
+<pre><code>after postfix increment i=6 j=5
+after prefix increment i=6 j=6
+</code></pre>
+<h3 id="oddball-operators-conditional-and-comma">oddball operators-conditional and comma</h3>
+<p>二目/三目运算的逻辑：</p>
+<p>c = (a &lt; b)? a:b</p>
+<p>means: if a &lt; b: c = a else c = a</p>
+<p>-&gt;<strong>express? expr1:expre2</strong></p>
+<pre><code class="language-c">#include&lt;stdio.h&gt;
+
+int main(void){
+	int speed;
+	printf(&quot;Enter a speed as a integer:&quot;);
+	scanf(&quot;%d&quot;,&amp;speed);
+	speed = (speed &lt;= 65) ? (65):(speed &lt;= 70) ? (70):(90);
+	switch (speed) {
+	case 65:
+		//TODO
+		printf(&quot;safe&quot;);
+		break;
+	case 70:
+		//TODO
+		printf(&quot;little dangerous&quot;);
+		break;
+	case 90:
+		printf(&quot;very dangerous&quot;);
+		break;
+	default:
+		//TODO
+		printf(&quot;incorrect speed&quot;);
+		break;
+	}
+	return 0;
+}
+</code></pre>
+<h3 id="break-and-continue-and-switch">Break and continue and switch</h3>
+<p>break与continue的的用法以及区别：</p>
+<ol>
+<li>当它们用在循环语句做循环体时，break用于立即<strong>退出本层循环</strong>，而continue仅仅<strong>结束本次循环</strong>（本次循环体内不执continue语句后的其它语句，但下一次循环还会继续执行。</li>
+<li>如果有多层循环时，break只会跳出本层循环，不会跳出其他层的循环</li>
+<li>break可用于switch语句，表示跳出整个switch语句块，而continue则不能单独的用于switch语句。但是continue可以用于循环内部的switch语句</li>
+</ol>
+<p>In a switch statement, basically you switched on an integral expression. So simple one might be the integer i, and then you have a bunch of cases and those cases can,Be critical cases where you want to do different things depending on some small value of i.</p>
+<p>what you're looking at syntactically is switch an <strong>integral expression</strong>, it can't be floating point, it must be integral. But it could be something like a short or a long in, or ASCII value for character.If there is no default, then you just don't do anything and you leave.</p>
+<p>Switch多路选择结构，常用语三个及以上问题的多选方案。</p>
+<pre><code class="language-c">switch (speed) {
+	case 65:
+		//TODO
+		printf(&quot;safe&quot;);
+		break;
+	case 70:
+		//TODO
+		printf(&quot;little dangerous&quot;);
+		break;
+	case 90:
+		printf(&quot;very dangerous&quot;);
+		break;
+	default:
+		//TODO
+		printf(&quot;incorrect speed&quot;);
+		break;
+	}
+</code></pre>
+<h2 id="functions-recursion-arrays-and-pointers">functions, recursion, arrays, and pointers</h2>
+<h3 id="types-of-functions">types of functions</h3>
+<p>Functions are important because they are crucial to the reuse of code.They're especially crucial if they exist in libraries. Libraries like standardio.h, standardlive.h, these are universally useful libraries, and we don't have to rewrite them. So we have to understand how to use them.</p>
+<p>Our syntax for a function. We have a types such as int or void. We have a function name, and the function name is a form of documentation like printf, or rand, or main. Then we have a parameter list. Then you have the body of the function, which is typically this bracing close what we call block. The block starts with a bunch of declarations if needed, and then a bunch of executable statements.</p>
+<p><strong>void</strong></p>
+<p>The function does not need any return statement</p>
+<p><strong>int</strong></p>
+<p>The function can return any value,the function exits at the end of its compound statement/block definition.</p>
+<h3 id="return">return</h3>
+<p>A return statement is a flow of control keyword return, and we've already seen it.</p>
+<p>At the end of a function in <strong>main</strong>, what it's meaning is that main returns of <strong>value zero</strong>, but where does return it to? Main is the program that you're executing, it returns it to the operating system, and it's used by the operating system sometimes to figure out whether if there was an error in the program. So return of zero means <em>the program finished in an expected or orderly way</em>, a normal exit.</p>
+<p>people generally when they're returning expression even if they don't need to, because of clarity stylistically they do use parenthesization.</p>
+<h2 id="storage-class">Storage class</h2>
+<p><a href="https://blog.csdn.net/weixin_44426035/article/details/105867312?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=c%E8%AF%AD%E8%A8%80%E5%AD%98%E5%82%A8%E7%B1%BB%E5%9E%8B&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-105867312.142%5Ev51%5Epc_rank_34_2,201%5Ev3%5Eadd_ask&amp;spm=1018.2226.3001.4187">详解四种存储变量</a></p>
+<p><strong>auto</strong>:This is the default storage class for all the variables declared inside a function or a block. Hence, the keyword auto is rarely used while writing programs in C language. Auto variables can be only accessed within the block/function they have been declared and not outside them (which defines their scope). Of course, these can be accessed within nested blocks within the parent block/function in which the auto variable was declared. However, they can be accessed outside their scope as well using the concept of pointers given here by pointing to the very exact memory location where the variables reside. They are assigned a garbage value by default whenever they are declared. <em>在函数体中声明则只能在当前函数体中使用,在main函数以及其他函数外声明即为全局变量</em></p>
+<p>**extern:**Extern storage class simply tells us that the variable is defined elsewhere and not within the same block where it is used. Basically, the value is assigned to it in a different block and this can be overwritten/changed in a different block as well. So an extern variable is nothing but a global variable initialized with a legal value where it is declared in order to be used elsewhere. It can be accessed within any function/block. Also, a normal global variable can be made extern as well by placing the ‘extern’ keyword before its declaration/definition in any function/block. This basically signifies that we are not initializing a new variable but instead we are using/accessing the global variable only. The main purpose of using extern variables is that they can be accessed between two different files which are part of a large program. For more information on how extern variables work, have a look at this <a href="https://www.geeksforgeeks.org/understanding-extern-keyword-in-c/">link</a>. <em>如果一个文件调用另一个文件中的变量，则在调用文件中需要使用extern声明变量</em></p>
+<p><strong>static</strong>:This storage class is used to declare static variables which are popularly used while writing programs in C language. Static variables have the property of preserving their value even after they are out of their scope! Hence, static variables preserve the value of their last use in their scope. So we can say that they are initialized only once and exist till the termination of the program. Thus, no new memory is allocated because they are not re-declared. Their scope is local to the function to which they were defined. Global static variables can be accessed anywhere in the program. By default, they are assigned the value 0 by the compiler.<em>静态变量如果没有被初始化，则自动初始化为0。静态变量只能够初始化一次</em></p>
+<p>**register:**This storage class declares register variables that have the same functionality as that of the auto variables. The only difference is that the compiler tries to store these variables in the register of the microprocessor if a free registration is available. This makes the use of register variables to be much faster than that of the variables stored in the memory during the runtime of the program. If a free registration is not available, these are then stored in the memory only. Usually few variables which are to be accessed very frequently in a program are declared with the register keyword which improves the running time of the program. An important and interesting point to be noted here is that we cannot obtain the address of a register variable using pointers. <em>声明为register的变量在由内存调入到CPU寄存器后，则常驻在CPU的寄存器中</em></p>
+<h3 id="recursion-递归">recursion-&gt;递归</h3>
+<p>In the recursive case, we have a test to see if we're what we're going to call the base case.So if we're at the base case, n equals zero and we're going to print blastoff. If we're not at the base case, then we have to do the recursion.</p>
+<h2 id="pointers-and-arrays">Pointers and  Arrays</h2>
+<blockquote>
+<p>认真学好指针！</p>
+</blockquote>
+<h3 id="array">array</h3>
+<p>Int data square bracket, a hundred square bracket, semicolon. So as with normal declaration is a types this could be any of the standard types like double long char and identifier that should indicate what we're processing.</p>
+<pre><code class="language-c">//数组创建：int是数组类型；arr是名字；100是数组长度
+int arr[100];
+//string数组
+char str[] = &quot;abc&quot;;
+</code></pre>
+<p>Wi-Ki:</p>
+<p><strong>Recursion</strong> (adjective: <em>recursive</em>) occurs when a thing is defined in terms of itself or of its type. Recursion is used in a variety of disciplines ranging from <a href="https://en.wikipedia.org/wiki/Linguistics">linguistics</a> to <a href="https://en.wikipedia.org/wiki/Logic">logic</a>. The most common application of recursion is in <a href="https://en.wikipedia.org/wiki/Mathematics">mathematics</a> and <a href="https://en.wikipedia.org/wiki/Computer_science">computer science</a>, where a <a href="https://en.wikipedia.org/wiki/Function_(mathematics)">function</a> being defined is applied within its own definition. While this apparently defines an infinite number of instances (function values), it is often done in such a way that no infinite loop or infinite chain of references (&quot;crock recursion&quot;) can occur.</p>
+<pre><code class="language-c">#include&lt;stdio.h&gt;
+
+int main(void){
+	
+	const int SIZE = 5;
+	int grades[5] = {78, 57, 85, 99, 66};
+	double sum = 0.0;
+	double ave = 0.0;
+	printf(&quot;my scores are:\n&quot;);
+	for(int i = 0;i &lt; SIZE;i++){
+		sum += grades[i];
+	}
+	printf(&quot;sum=%lf\n&quot;,sum);
+	ave = sum / SIZE;
+	printf(&quot;ave=%lf\n&quot;,ave);
+	return 0;
+
+}
+</code></pre>
+<h3 id="pointers-传说中的指针">pointers-传说中的指针</h3>
+<p>简而言之，指针只有两大重要作用：传递和偏移。</p>
+<p>Exactly how is an <strong>array stored</strong> in memory? What we have to understand is an array has a place where it's stored and it starts at what's called its base address. That's because we want a bunch of elements.</p>
+<p>理解指针就要理解数组在计算机中的存储原理和地址的含义</p>
+<p>we have to have a place to start, and then it runs contiguously through as much memory as is needed. That gets allocated automatically in this case by the compiler. The array has a very strong relationship with another data type called a pointer.</p>
+<p>A simple data type like an integer, when we say integer a inside a block, it means create a variable in memory. So when we think of a variable, we think of its name. That's how we use it in the code but we think it has a location and memory, and inside that location is some stored value interpreted as an integer. So an address calculation for an array in C, base address plus the offset, the index times the size required, the size in bytes required to store that individual datatype.</p>
+<p>But if you just want to be a simple programmer, it may be enough to just understand that indexing works for you. But really to get to the next level, you want to really understand the notion of address.</p>
+<p>If we tried to print the value of P, we would get some address. If we were to dereference it, star is a dereferencing. If we were to dereference P, the value there would be the integer value。</p>
+<p>Very important that you get to understand pointer, variable, memory address.</p>
+<h3 id="函数值传递vs引用传递">函数	值传递VS引用传递</h3>
+<p>call--by-value 按值调用</p>
+<p>call by reference 引用调用</p>
+<pre><code class="language-c">#include&lt;stdio.h&gt;
+#include&lt;stdlib.h&gt;
+
+int SumArr(int A[]){
+	
+	int i,sum = 0;
+	int size = sizeof(A)/sizeof(A[0]);
+	printf(&quot;Subfunc - size of A =%d,size of A[0] = %d\n&quot;,sizeof(A),sizeof(A[0]));
+	for(i = 0;i &lt; size;i++){
+		sum += A[i];
+	}
+}
+
+int main(void){
+	
+	int A[] = {1,2,3,4,5};
+	int size = sizeof(A)/sizeof(A[0]);
+	int total = SumArr(A);
+	printf(&quot;the sum = %d\n&quot;,total);
+	printf(&quot;mian - size of A =%d,size of A[0] = %d\n&quot;,sizeof(A),sizeof(A[0]));
+	return 0;
+	
+}
+</code></pre>
+<p>在子函数中，只是拷贝的主函数中数组的首地址，而不是把主函数中所有的数组元素传入到子函数的数组中。无论是传入普通类型还是指针类型。</p>
+<p>When using a reference declaration in a function header to simulate call-by-reference, it means the referenced variable in the calling environment can be changed.</p>
+<p>Keep in mind this is what scanf() does.</p>
+<p>Unlike many programming languages an array name in C is just a pointer to a base address and there is no way to know its size.</p>
+<p>了解一下变量类型在数组中所占有的内存大小：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">types</th>
+<th style="text-align:center">size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">int</td>
+<td style="text-align:center">4-bytes</td>
+</tr>
+<tr>
+<td style="text-align:center">char</td>
+<td style="text-align:center">1-bytes</td>
+</tr>
+<tr>
+<td style="text-align:center">float</td>
+<td style="text-align:center">4-bytes</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-c">int main{
+    int a  =5;
+    int *p;
+    p = &amp;a;//p就是a的地址
+    printf(&quot;%p&quot;,p);//指针变量
+    printf(&quot;%p&quot;,&amp;a);//a的地址
+    printf(&quot;%p&quot;,&amp;p);//指针p的地址-“地址的地址”
+    printf(&quot;%d&quot;,*p);//指针的解引用-Dereference
+}
+</code></pre>
+<h4 id="指针的偏移">指针的偏移</h4>
+<pre><code class="language-c">	int arr[] = {12,23,34};
+	int *p = arr;
+	printf(&quot;%p\n&quot;,&amp;arr[1]);
+	printf(&quot;%p\n&quot;,arr+1);
+	printf(&quot;%p\n&quot;,&amp;arr+1);//&amp;arr+1是跳过了整个数组去寻值
+	printf(&quot;%p\n&quot;,p+1);
+	printf(&quot;%d\n&quot;,p[1]); 
+	printf(&quot;%d&quot;,*(p+2));
+</code></pre>
+<h3 id="动态内存申请">动态内存申请</h3>
+<p>引入**#include&lt;stdlib.h&gt;<strong>，头文件；调用</strong>malloc**申请内存。</p>
+<p>数组一开始定义就确定好了，数组是放在栈空间。C语言数组长度固定是因为其固定在整型、浮点型、字符型、数组变量的<strong>栈空间</strong>中，而占空间的大小是在编译时确定好的，如果栈空间不确定，那就要存放在<strong>堆空间</strong>。</p>
+<ul>
+<li>栈空间-&gt;教室大小/长度固定</li>
+<li>堆空间-&gt;长度不固定</li>
+</ul>
+<p><strong>必须先申请内存在进行操作</strong>！！！！！</p>
+<pre><code class="language-c">LinkList CreatList2(LinkList &amp;L){
+	
+	//必须先申请内存在进行操作
+	int x;
+	L = (LinkList)malloc(sizeof(LNode));
+	LNode *s;
+	LNode *r = L;//等价于LinkList r=L;
+	//L = (LinkList)malloc(sizeof(LNode));
+	scanf(&quot;%d&quot;,&amp;x);
+	while(x != 9999){
+		s = (LinkList)malloc(sizeof(LNode));
+		s-&gt;data = x;
+		r-&gt;next = s;
+		r = s;
+		scanf(&quot;%d&quot;,&amp;x);
+	}
+	r-&gt;next = NULL;
+	return L;
+}
+</code></pre>
+<p>您比如说这个尾插法，我一开始是这么写的：</p>
+<pre><code class="language-c">	int x;
+	//L = (LinkList)malloc(sizeof(LNode));
+	LNode *s;
+	LNode *r = L;//等价于LinkList r=L;
+	L = (LinkList)malloc(sizeof(LNode));
+</code></pre>
+<p>程序的执行顺序是从上到下的，切记；所以内存后申请总是爆错。</p>
+<p>修改顺序后，立马就对了：</p>
+<pre><code class="language-c">	int x;
+	L = (LinkList)malloc(sizeof(LNode));
+	LNode *s;
+	LNode *r = L;//等价于LinkList r=L
+</code></pre>
+<p>x.malloc必须写在前面，血的教训啊!😢</p>
+<h3 id="c语言中c的引用">C语言中C++的引用</h3>
+<p>在严蔚敏老师的《数据结构》一书中，伪代码给出的是使用C++的方式，所以在编译器中创建文件时，一定要把文件后缀改成.cpp文件而不是.c文件。</p>
+<p>在参数传递与调用的过程中，体现出来了C++对于参数传递和调用的便捷性。</p>
+<pre><code class="language-c++">void change(int &amp;a){
+	a = a + 1;
+}
+int main(){
+    
+    int i = 10;
+    change(i);
+    printf(&quot;i = %d&quot;,i);
+    return 0;
+}
+</code></pre>
+<p>-&gt;为什么我们需要在形参的地方使用C++的引用？</p>
+<p>在子函数中去改变对应的形参赋值后，子函数结束后，对应主函数的实参就发生了变化。</p>
+<p>如果没有使用引用，那么在子函数中给形参赋值；子函数结束后，主函数中的实参不会发生变化。</p>
+<p>其实说白了就是，你在子函数中要不要改变实参的值-&gt;看实际需求，如果调用的子函数就是用来去改变实参的，那么就必须加上引用，否则，就不需要加引用，形参就是一个辅助变量。借助形参，去实现函数功能。</p>
+<p>如果不理解，任何情况下都加上&amp;</p>
+<h3 id="结构体定义时的小细节区别对比-typedef">结构体定义时的小细节区别对比-typedef</h3>
+<p>结构体定义前加与不加typedef的区别是在调用结构体的时候发现的。</p>
+<p>首先对于不同方式创建结构体：</p>
+<pre><code class="language-c">//定义typedef结构体
+typedef struct student{
+	int ID;
+	char name[10];
+	char sex;
+}stu;
+
+//定义无typedef结构体
+struct student{
+	int ID;
+	char name[10];
+	char sex;
+}stu;
+</code></pre>
+<p>两种创建方式虽然功能上大体一致，但是对于stu这个别名的使用上确有这千差万别。</p>
+<p>首先对于typedef定义的结构体来说，stu是可以在主函数中去实例化一个对象的。定义了结构体类型<code>student</code>和<code>student</code>的类别名<code>stu</code></p>
+<pre><code class="language-c">	stu s;
+	s.ID = 1;
+	s.name = 'ss';
+	s.sex = 'M';
+</code></pre>
+<p>这样书写完全没问题；但是如果创建ADT之前不加typedef，这样创建就会报错。不加typedef,stu就是一个单纯的实例化对象了，只能在主函数去使用属性，而不能再去实例化其他变量。定义了结构体类型<code>student</code>和<code>student</code>的对象实例<code>stu</code></p>
+<pre><code class="language-c">	stu.ID = 1;
+	stu.name = 'ss';
+	stu.sex = 'M';
+</code></pre>
+<p>stu s会报错。</p>
+<p>结构也是一种数据类型, 可以使用结构变量, 因此像其它类型的变量一样, 在使用结构变量时要先对其定义。</p>
+<p>定义结构变量的一般格式为:</p>
+<pre><code class="language-c">struct 结构名
+{
+    类型 变量名;
+    类型 变量名;
+    ...
+} 结构变量;
+</code></pre>
+<p>结构名是结构的标识符不是变量名。</p>
+<p>另一种常用格式为:</p>
+<pre><code class="language-c">typedef struct 结构名
+{
+    类型 变量名;
+    类型 变量名;
+    ...
+
+} 结构别名;
+</code></pre>
+<p>另外注意: 在C中，<code>struct</code>不能包含函数。在C++中，对<code>struct</code>进行了扩展，可以包含函数。</p>
+<h2 id="文件类型关系">文件类型关系</h2>
+<ol>
+<li>只有.h文件的Package可以是<strong>接口或模板</strong>(template)的定义；</li>
+<li>只有.cpp文件的Package可以是一个<strong>程序</strong>的入口。</li>
+<li>简单讲，一个<strong>Package就是由同名的.h和.cpp</strong>文件组成。当然可以少其中任意一个文件。</li>
+</ol>
+<p>.cpp是C++文件的扩展名，.cpp主要是进行函数定义的，类中函数的声明和调用是在.h中的，.h文件主要是把函数进行封装，在写很多代码的时候，用上.h有很好的作用，这时候我们只要给对方公司*.h文件就行了，这样既提供了必要的信息，又保护了我们的核心代码。在.cpp中对.h文件进行调用时，要用#include.xxxh。建议按照**.h *.cpp配对分开写。</p>
+<ol>
+<li>
+<p>.cpp内用于：</p>
+<ul>
+<li>函数实现（包括全局函数（默认）、静态函数）</li>
+<li>全局变量、静态变量定义</li>
+<li>静态函数声明，静态变量声明.h内用于</li>
+</ul>
+</li>
+<li>
+<p>h内用于：</p>
+<ul>
+<li>
+<p>全局函数声明，注意<strong>静态函数</strong>不包括在内。</p>
+</li>
+<li>
+<p>全局变量声明，无静态变量。</p>
+</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>版权声明：本文为CSDN博主「菜鸟程序员小黄」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>
+原文链接：https://blog.csdn.net/m0_55671922/article/details/115552516</p>
+</blockquote>
+<h2 id="逻辑结构与存储结构">逻辑结构与存储结构</h2>
+<p>数据存储的逻辑结构有：集合结构、链式结构、树状结构、图结构</p>
+<p>存储结构有：顺序存储和链式存储</p>
+<h3 id="线性表">线性表</h3>
+<p>特点：</p>
+<ol>
+<li>元素个数是有限的</li>
+<li>表中数据的数据类型全部相同-&gt;每个元素占有相同的内存空间</li>
+<li>所有元素逻辑上是连续的，排序有先后顺序</li>
+</ol>
+<p>线性表是独立于数据结构的逻辑结构不是存储结构，不要轻易把数组和链表与线性表混淆。</p>
+<p>优点：</p>
+<p>可以随机存取表中的任意一个元素，存储密度高，每个元素只存取数据元素</p>
+<p>缺点：</p>
+<p>插入和删除时需要移动大量元素，变化较大，难以确定存储空间大小；需要分配连续的存储空间，不够灵活。</p>
+<h3 id="单链表">单链表</h3>
+<p>单链表的增删改查</p>
+<p>重点掌握单链表的<strong>头插法</strong>与<strong>尾插法</strong>的插入思路。</p>
+<pre><code class="language-c">#include&lt;stdio.h&gt;
+#include&lt;stdlib.h&gt;
+
+//在此程序中，*LinkList是变量的指针；LinkList为指针变量。
+
+//单链表的增删改查
+//线性表的链式表示就是单链表
+#define Maxsize 50
+#define InitSize 100
+
+//定义一个整型类型的变量
+typedef int ElemType;
+
+//单链表结构创建-8个字节
+typedef struct LNode {//单链表的结构
+
+	ElemType data;//数据域
+	struct LNode* next;//指针域
+}LNode,*LinkList;
+//LinkList为结构体指针等价于struct LNode*
+//别名LNode可以和上面保持一致
+
+
+//头插法插入新的节点
+//创建单链表-&gt;带有头结点
+//头结点只需要头指针指向，啥也不存
+LinkList CreatList1(LinkList &amp;L) {
+
+	LNode* q;
+	int x;
+	L = (LinkList)malloc(sizeof(LNode));//带头结点的链表
+	L-&gt;next = NULL;
+	scanf_s(&quot;%d&quot;, &amp;x);
+	while (x != 9999) {
+		q = (LinkList)malloc(sizeof(LNode));
+		q-&gt;data = x;
+		q-&gt;next = L-&gt;next;
+		L-&gt;next = q;
+		scanf_s(&quot;%d&quot;, &amp;x);
+	}
+	return L;
+}
+
+//尾插法创建单链表
+LinkList CreatList2(LinkList &amp;L) {
+
+	int x;
+	L = (LinkList)malloc(sizeof(LNode));//带头结点的链表
+	//在这里需要注意的是，r本身就是表尾节点,指向链表尾部
+	LNode* s, * r = L;//等价于LinkList s,r=L;
+	scanf_s(&quot;%d&quot;, &amp;x);
+	while (x != 9999) {
+		s = (LinkList)malloc(sizeof(LNode));
+		s-&gt;data = x;
+		r-&gt;next = s;
+		r = s;//r指向新的表尾节点
+		scanf_s(&quot;%d&quot;, &amp;x);
+	}
+	r-&gt;next = NULL;//尾节点指针赋值为空
+	return L;
+}
+
+//查找节点
+LNode* GetElem(LinkList L, int i) {
+
+	int j = 1;
+	//初始指向虚拟头结点的下一个节点
+	LNode* p = L-&gt;next;
+	if (i == 0) {
+		return L;
+	}
+	if (i &lt; 1) {
+		return NULL;
+	}
+	//p-&gt;非空
+	while (p &amp;&amp; j &lt; i) {
+
+		p = p-&gt;next;
+		j++;
+	}
+	return p;
+}
+
+//任意两个节点之间插入节点
+//第i个位置插入值为e的节点
+bool InsertFrontList(LinkList L,int i,ElemType e) {
+
+	LinkList p = GetElem(L,i - 1);
+	if (NULL == p) {
+		return false;
+	}
+	LinkList s = (LNode*)malloc(sizeof(LNode));//为新插入的节点申请内存空间
+	s-&gt;data = e;
+	s-&gt;next = p-&gt;next;
+	p-&gt;next = s;
+	return true;
+}
+
+bool InsertBackList(LinkList L,ElemType e) {
+
+	//L = (LinkList)malloc(sizeof(LNode));//带头结点的链表
+	while (L-&gt;next != NULL) {
+		L = L-&gt;next;
+	}
+	LNode* q;
+	int x;
+	scanf_s(&quot;%d&quot;, &amp;x);
+	while (x != 9999) {
+		q = (LinkList)malloc(sizeof(LNode));
+		q-&gt;data = x;
+		L-&gt;next = q;
+		q-&gt;next = NULL;
+		scanf_s(&quot;%d&quot;, &amp;x);
+	}
+	return L;
+
+}
+
+//无论是中间插入还是删除，找到需要操作节点的前驱节点是关键
+
+//删除第i个位置的节点
+bool DeleteList(LinkList L,int i) {
+
+	//找到要删除元素的前驱结点
+	LinkList p = GetElem(L, i - 1);
+	LinkList q = p-&gt;next;
+	if (p == NULL) {
+
+		return false;//要删除的位置不存在
+	}
+	p-&gt;next = q-&gt;next;//断链
+	free(q);
+	q = NULL;
+	return true;
+
+}
+
+
+void PrintList(LinkList L) {
+
+	//头结点
+	L = L-&gt;next;
+	while (L != NULL) {
+		printf(&quot;%d\t&quot;, L-&gt;data);
+		L = L-&gt;next;
+	}
+}
+
+//查找第几个元素
+LinkList LocateElem(LinkList L, ElemType e) {
+
+	int j = 1;
+	LinkList p = L-&gt;next;
+	while (p != NULL &amp;&amp; p-&gt;data != e) {
+		p = p-&gt;next;
+		j++;
+	}
+	return p;
+
+}
+
+int main() {
+
+	//定义链表头,结构体指针类型
+	LinkList L;
+	LinkList search;//用来存储拿到的某一个节点
+	LinkList search1;
+	printf(&quot;请在下方输入单链表的值：（^_^大于5个元素且输入9999终止^_^）\n&quot;);
+	CreatList1(L);
+	printf(&quot;头插法的结果为：&quot;);
+	PrintList(L);
+	search = GetElem(L, 2);
+	if (search != NULL) {
+
+		printf(&quot;\n按序号查找成功！~\n&quot;);
+		printf(&quot;该位置的值为：%3d\n&quot;, search-&gt;data);
+	}
+	search1 = LocateElem(L, 5);
+	/*
+	if (search1 != NULL) {
+
+		printf(&quot;\n按序号查找成功！~\n&quot;);
+		printf(&quot;该的值为：%3d&quot;, search-&gt;data);
+	}
+	*/
+	InsertFrontList(L, 3, 30);
+	PrintList(L);
+	printf(&quot;\n-----------\n&quot;);
+	printf(&quot;删除后的结果为：\n&quot;);
+	DeleteList(L, 3);
+	PrintList(L);
+	printf(&quot;\n-----------\n&quot;);
+	printf(&quot;请在下方输入单链表的值：（^_^大于5个元素且输入9999终止^_^）\n&quot;);
+	CreatList2(L);
+	printf(&quot;尾插法的结果为：&quot;);
+	PrintList(L);
+	return 0;
+
+}
+</code></pre>
+<h3 id="栈">栈</h3>
+<p>只允许在一端进行插入或者删除的线性表，栈顶（top）。后进先出-&gt;LIFO</p>
+<h2 id="两种重要的计算机思维">两种重要的计算机思维</h2>
+<p>两种重要的编程思维在日常练习中极其重要，对于计算思维的培养是决定一个程序员能走多远的关键所在。在平时的编程练习时要注重对于两种思维的培养与训练。</p>
+<h3 id="递归-逆向思考">递归-逆向思考</h3>
+<h3 id="分治-化繁为简">分治-化繁为简</h3>
+<p>对于分治算法的理解水平和应用的得心应手的程度，是衡量一个程序眼计算素养的标尺。这一关无法突破就无法成为一个四级工程师。</p>
+<p>对于分治算法理解的三个层次：</p>
+<ol>
+<li>了解皮毛，解决一些算法习题</li>
+<li>灵活运用计算思维，解决大问题</li>
+<li>掌握精髓，解决以前从未解决的问题</li>
+</ol>
+<p>分治算法的步骤描述：</p>
+<ol>
+<li>将复杂的问题分成若干个简单的子问题进行解决。-&gt;<strong>分割</strong></li>
+<li>解决每一个子问题，若果子问题很大继续递归分解。-&gt;<strong>解决</strong></li>
+<li>对子问题的结果进行合并。-&gt;<strong>合并</strong></li>
+</ol>
+<h2 id="for循环的几种书写方法">for循环的几种书写方法</h2>
+<h3 id="下标循环">下标循环</h3>
+<pre><code class="language-c++">for(int i = 0;i &lt; nums.size();i++){
+    //操作
+    ......        
+        }
+</code></pre>
+<p>如果事先声明了索引<strong>下标</strong>，则不需要在for循环中进行下标的初始化。</p>
+<pre><code class="language-c++">int i = 0;
+for(;i &lt; nums.size();i++){
+    //操作
+    ......
+}
+</code></pre>
+<p><strong>死循环</strong>形式</p>
+<pre><code class="language-c++">for(;;){
+    //操作
+    ......         
+}
+</code></pre>
+<h3 id="迭代器循环">迭代器循环</h3>
+<pre><code class="language-c++">vector&lt;char&gt;myvector(arc,arc+23);
+vector&lt;char&gt;::iterator iter;
+ 
+//for循环遍历 vector 容器
+for (iter = myvector.begin(); iter != myvector.end(); ++iter) {
+    cout &lt;&lt; *iter;
+}
+</code></pre>
+<h3 id="forauto-ite-array">for(auto ite : array)</h3>
+<p>C++ 11 标准中，除沿用前面介绍的用法外，为 for 循环添加了新的语法格式</p>
+<ul>
+<li>旧格式的 for 循环可以<strong>指定循环的范围</strong></li>
+<li>而 C++11 标准增加的 for 循环，只会<strong>逐个遍历</strong> expression 参数处<strong>指定序列</strong>中的每个元素</li>
+</ul>
+<p>**for(auto a:b)**中b为一个容器或者数组，效果是利用a遍历并获得b容器中的每一个值，但是a无法影响到b容器中的元素。</p>
+<p>**for(auto &amp;a:b)**中加了引用符号，可以对容器中的内容进行赋值，即可通过对a赋值来做到容器b的内容填充。</p>
+<pre><code class="language-c++">1、数组
+ int array[] = {1, 2, 3, 4, 5};
+ for(auto e : array)
+    cout &lt;&lt; e &lt;&lt; endl;
+ 等价于
+ for(int i = 0; i &lt; 5; i++)
+     cout &lt;&lt; array[i]&lt;&lt;endl;
+
+2、字符串
+string str = &quot;hello world&quot;;
+for(auto ch : str)
+   cout &lt;&lt; ch &lt;&lt;endl;
+等价于
+for(int i = 0; i &lt;str.size(); i++)
+    cout &lt;&lt; str[i] &lt;&lt;endl;
+  
+3、vector
+vector&lt;int&gt; m_v = {1, 2, 3, 4};
+for(auto e : m_v)
+    cout &lt;&lt; e &lt;&lt;endl;
+ 等价于
+ for(int i = 0; i &lt; m_v.size(); i++)
+     cout &lt;&lt;v[i]&lt;&lt;endl;
+4、map
+map&lt;int,string&gt; m = {{1, &quot;abc&quot;}, {2, &quot;bca&quot;}, {3, &quot;cab&quot;}};
+for(auto e : m)
+    cout &lt;&lt;e.first&lt;&lt;&quot;  &quot;&lt;&lt; e.second&lt;&lt;endl;
+等价于
+for(map&lt;int, string&gt;::iterator it = m.begin();it != m.end(); it++)
+cout &lt;&lt;it-&gt;first&lt;&lt;&quot;  &quot;&lt;&lt;it-&gt;second&lt;&lt;endl;
+————————————————
+版权声明：本文为CSDN博主「A阿哲」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/zhanghaizhe/article/details/103460084
+</code></pre>
+<h2 id="基本的语法">基本的语法</h2>
+<p>最近写c++代码是收到了一个疑惑？就是语句中带有？（问号）是语句理解不好</p>
+<p>其实语句中带有问号的c++语句，是if-else if-else的简便方式</p>
+<p>该操作符是三元的，其一般形式为：</p>
+<ul>
+<li>EXP1? EXP2: EXP3</li>
+</ul>
+<p>EXP1，EXP2和EXP3是表达式，注意冒号的用法和位置。</p>
+<p>这个写法和Python中的匿名函数相似。</p>
+<p>给Python的匿名函数举一个例子:</p>
+<pre><code class="language-python">lambda x : x*2
+</code></pre>
+<h3 id="c匿名函数">C++匿名函数</h3>
+<p>所谓匿名函数，其实类似于python中的lambda函数，其实就是没有名字的函数。使用匿名函数，可以免去函数的声明和定义。这样匿名函数仅在调用函数的时候才会创建函数对象，而调用结束后立即释放，所以匿名函数比非匿名函数更节省空间。</p>
+<h2 id="数据类型">数据类型</h2>
+<p><strong>1、预定义类型</strong></p>
+<p><strong>整型</strong></p>
+<p>c++有四种整型类型：<strong>short、int、long、long long</strong>，每种都有signed(有符号，默认)、unsigned(无符号)两种分类，有符号整数既可以表示非负整数，又可以表示负整数；但是，无符号整数不能表示负数，只能表示非负整数。</p>
+<p>●　short至少16位</p>
+<p>●　int至少与short一样长</p>
+<p>●　long至少32位，且至少与int一样长</p>
+<p>●　long long至少64位，且至少与long一样长</p>
+<p><strong>字符型</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">含义</th>
+<th style="text-align:center">该类型数据所占的最小比特位数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">char</td>
+<td style="text-align:center">字符</td>
+<td style="text-align:center">8位（即可表示28个字符）</td>
+</tr>
+<tr>
+<td style="text-align:center">wchar_t</td>
+<td style="text-align:center">宽字符</td>
+<td style="text-align:center">16位</td>
+</tr>
+<tr>
+<td style="text-align:center">char16_t</td>
+<td style="text-align:center">Unicode字符</td>
+<td style="text-align:center">16位</td>
+</tr>
+<tr>
+<td style="text-align:center">char32_t</td>
+<td style="text-align:center">Unicode字符</td>
+<td style="text-align:center">32位</td>
+</tr>
+</tbody>
+</table>
+<p><strong>布尔型</strong></p>
+<p>布尔类型(bool)是C++新增的一种基本数据类型，就是将int型定义为bool型，将int型的0和1两个值分别定义为bool类型的两个值true和false。</p>
+<p><strong>浮点型</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">double</td>
+<td style="text-align:center">64位双精度浮点型</td>
+</tr>
+<tr>
+<td style="text-align:center">float</td>
+<td style="text-align:center">32位单精度浮点型</td>
+</tr>
+</tbody>
+</table>
+<p><strong>空类型</strong></p>
+<p>关键字void定义的类型，不能用于普通变量的声明和普通的操作，只能用于指针型变量，函数返回值和函数参数。</p>
+<p><strong>指针类型</strong></p>
+<p>指针，用来描述内存地址，并通过提供指针操作来实现与内存相关的程序功能。<strong>&lt;类型&gt;* &lt;指针变量&gt;;</strong></p>
+<p>其中&lt;类型&gt;决定了指向的内存空间的大小。</p>
+<p>指针变量也是一种变量，有着自己的内存空间，该空间上存储的是另一个变量的内存空间。</p>
+<p><strong>2、自定义数据类型</strong></p>
+<p><strong>数组类型</strong></p>
+<p>数组类型是一种有固定多个同类型的元素按一定次序所构成的数据类型。</p>
+<p>2.1、一维数组类型  int dp[5]</p>
+<p>2.2、二维数组类型  int dp[2] [3]</p>
+<p><strong>结构体数据类型</strong></p>
+<p>1、结构体</p>
+<p>结构体是由一系列具有相同类型或者不同类型的数据构成的数据集合。</p>
+<pre><code class="language-c++">struct 名称{
+
+   数据类型 变量名1；
+
+   数据类型 变量名2；
+
+   .... 
+
+   数据类型 变量名n；
+
+ }结构体变量名;
+</code></pre>
+<p>结构体数组:</p>
+<pre><code class="language-c++">struct Info{
+
+   int age;
+
+   char name[32];
+
+}info[SIZE];
+</code></pre>
+<p><strong>枚举类型</strong></p>
+<p>枚举类型(enumeration)是C++中的一种派生数据类型，它是由用户定义的若干枚举常量的集合。如果一个变量只有几种可能的值，可以定义为枚举(enumeration)类型。所谓&quot;枚举&quot;是指将变量的值一一列举出来，变量的值只能在列举出来的值的范围内。</p>
+<pre><code class="language-c++">enum 枚举名{ 
+
+     标识符[=整型常数], 
+
+     标识符[=整型常数], 
+
+	 ... 
+
+     标识符[=整型常数]
+
+} 枚举变量;
+</code></pre>
+<h2 id="函数">函数</h2>
+<h3 id="定义函数">定义函数</h3>
+<p>在 C++ 中，函数由一个函数头和一个函数主体组成。下面列出一个函数的所有组成部分：</p>
+<ul>
+<li>**返回类型：**一个函数可以返回一个值。<strong>return_type</strong> 是函数返回的值的数据类型。有些函数执行所需的操作而不返回值，在这种情况下，return_type 是关键字 <strong>void</strong>。</li>
+<li>**函数名称：**这是函数的实际名称。函数名和参数列表一起构成了函数签名。</li>
+<li>**参数：**参数就像是占位符。当函数被调用时，您向参数传递一个值，这个值被称为实际参数。参数列表包括函数参数的类型、顺序、数量。参数是可选的，也就是说，函数可能不包含参数。</li>
+<li>**函数主体：**函数主体包含一组定义函数执行任务的语句。</li>
+</ul>
+<p><strong>一个函数就是一个功能</strong>，一般把一个大型程序划分为若干个程序模块。无论把函数分为多少个程序模块，其中只能有一个main函数，程序总是从main函数开始执行的。c++继承了c语言中面向函数的语言特性，在其之上又加入了面向对象的函数设计思想。学会设计并使用函数。</p>
+<p>主函数写的很简单，它的作用就是调用各个子函数，程序的各部分功能是由各个子函数组合实现的，主函数相当于总调度。</p>
+<h3 id="函数分类">函数分类</h3>
+<p>（1）系统函数，即库函数</p>
+<p>由编译系统提供的函数，可以直接通过头文件调用；这就是为什么在调用函数时必须在程序最前面添加#include&lt;&gt;的原因。</p>
+<p>（2）用户自定义的函数</p>
+<p>（1无参函数</p>
+<p>调用时不必给出参数</p>
+<p>（2有参函数</p>
+<p>在调用函数时要给出必要的参数。</p>
+<p><strong>类型名	函数名（形式参数列表）</strong></p>
+<p>{</p>
+<pre><code>	**声明部分;**
+
+	**执行语句;**
+</code></pre>
+<p>}</p>
+<h3 id="函数参数">函数参数</h3>
+<p>如果函数要使用参数，则必须声明接受参数值的变量。这些变量称为函数的<strong>形式参数</strong>。在定义函数时，函数名后面括号中的变量名称为形式参数；在主函数中调用函数时，函数名后面括号中的参数为<strong>实际参数</strong>。</p>
+<p>形式参数就像函数内的其他局部变量，在进入函数时被创建，退出函数时被销毁。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">调用类型</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><a href="https://www.runoob.com/cplusplus/cpp-function-call-by-value.html">传值调用</a></td>
+<td style="text-align:left">该方法把参数的实际值赋值给函数的形式参数。在这种情况下，修改函数内的形式参数对实际参数没有影响。</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.runoob.com/cplusplus/cpp-function-call-by-pointer.html">指针调用</a></td>
+<td style="text-align:left">该方法把参数的地址赋值给形式参数。在函数内，该地址用于访问调用中要用到的实际参数。这意味着，修改形式参数会影响实际参数。</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.runoob.com/cplusplus/cpp-function-call-by-reference.html">引用调用</a></td>
+<td style="text-align:left">该方法把参数的引用赋值给形式参数。在函数内，该引用用于访问调用中要用到的实际参数。这意味着，修改形式参数会影响实际参数</td>
+</tr>
+</tbody>
+</table>
+<p>函数返回值</p>
+<p>通过函数的调用使得主函数得到一个<strong>确定的函数值</strong>，这就是函数的返回值。</p>
+<h3 id="调用函数与递归调用">调用函数与递归调用</h3>
+<p>创建 C++ 函数时，会定义函数做什么，然后通过调用函数来完成已定义的任务。</p>
+<p>当程序调用函数时，程序控制权会转移给被调用的函数。被调用的函数执行已定义的任务，当函数的返回语句被执行时，或到达函数的结束括号时，会把程序控制权交还给主程序。</p>
+<p>在调用一个函数过程中又出现直接或者间接调用函数本身，称为函数<strong>递归调用</strong>。</p>
+<h3 id="指针参数调用">指针参数调用</h3>
+<p>要想改变主调函数中的值，必须传入函数的地址，而且必须通过*+地址去赋值，无论在这个变量时什么类型的。</p>
+<pre><code class="language-c">void f(int *p){
+    //被调用的时候得到了某个变量的地址
+}
+int main(){
+    int i = 0;
+    f(&amp;i);
+    //传递地址类型的参数
+}
+在函数里面可以通过这个指针访问外面这个i
+</code></pre>
+<p>注：在传递数组长度sizeof时，必须在main函数中传递。如果利用指针传递参数，那么子函数中返回的sizeof返回的是int*a的长度而不是int a[ ]的长度； int *a是首地址即 a[0]的sizeof。</p>
+<h3 id="lambda-函数与表达式">Lambda 函数与表达式</h3>
+<p>C++11 提供了对匿名函数的支持,称为 Lambda 函数(也叫 Lambda 表达式)。</p>
+<p>Lambda 表达式把函数看作对象。Lambda 表达式可以像对象一样使用，比如可以将它们赋给变量和作为参数传递，还可以像函数一样对其求值。</p>
+<h3 id="c-数学运算">C++ 数学运算</h3>
+<p>在 C++ 中，除了可以创建各种函数，还包含了各种有用的函数供您使用。这些函数写在标准 C 和 C++ 库中，叫做<strong>内置</strong>函数。您可以在程序中引用这些函数。</p>
+<p>C++ 内置了丰富的数学函数，可对各种数字进行运算。下表列出了 C++ 中一些有用的内置的数学函数。</p>
+<p>为了利用这些函数，您需要引用数学头文件 <strong><cmath></strong>。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">函数 &amp; 描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center"><strong>double cos(double);</strong> 该函数返回弧度角（double 型）的余弦。</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center"><strong>double sin(double);</strong> 该函数返回弧度角（double 型）的正弦。</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center"><strong>double tan(double);</strong> 该函数返回弧度角（double 型）的正切。</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center"><strong>double log(double);</strong> 该函数返回参数的自然对数。</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center"><strong>double pow(double, double);</strong> 假设第一个参数为 x，第二个参数为 y，则该函数返回 x 的 y 次方。</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center"><strong>double hypot(double, double);</strong> 该函数返回两个参数的平方总和的平方根，也就是说，参数为一个直角三角形的两个直角边，函数会返回斜边的长度。</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center"><strong>double sqrt(double);</strong> 该函数返回参数的平方根。</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center"><strong>int abs(int);</strong> 该函数返回整数的绝对值。</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center"><strong>double fabs(double);</strong> 该函数返回任意一个浮点数的绝对值。</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center"><strong>double floor(double);</strong> 该函数返回一个小于或等于传入参数的最大整数。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="c中直接调用的函数">C++中直接调用的函数</h3>
+<p>1、sqrt(x)</p>
+<p>取x的平方根。</p>
+<p>2、pow(x,y)</p>
+<p>值为x的y次方。</p>
+<p>3、abs(x)</p>
+<p>取整数的绝对值。</p>
+<p>fabs(x)</p>
+<p>求精度更高的double、float型的绝对值。</p>
+<p>4、floor(x)</p>
+<p>返回一个小于或等于x的最大整数。</p>
+<p>5、setw(x)</p>
+<p>空x个空格。</p>
+<p>6、strcpy(s1,s2)</p>
+<p>复制字符串s2到字符串s1。</p>
+<p>7、strlen(s1)</p>
+<p>返回字符串s1的长度。</p>
+<p>8、strcat(s1,s2)</p>
+<p>连接字符串 s2 到字符串 s1 的末尾。</p>
+<p>9、strchr(s1,ch)</p>
+<p>返回一个指针，指向字符串 s1 中字符 ch 的第一次出现的位置。</p>
+<p>10、strstr(s1,s2)</p>
+<p>返回一个指针，指向字符串 s1 中字符串 s2 的第一次出现的位置。</p>
+<p>11、strcmp(s1,s2)</p>
+<p>如果 s1 和 s2 是相同的，则返回 0；如果 s1&lt;s2 则返回值小于 0；如果 s1&gt;s2 则返回值大于 0。<br>
+原文链接：https://blog.csdn.net/qq_55196230/article/details/122525491</p>
+<h3 id="常用的字符串函数">常用的字符串函数</h3>
+<h2 id="指针">指针</h2>
+<p>指针类型可以有函数类型、对象类型或者不完全类型派生出来，派生指针类型的类型称为被引用类型。指针类型描述了一种对象，其值用于引用被引用类型的实体。</p>
+<p>这是C11中给出指针类型的标准定义，读起来拗口难懂！</p>
+<p>那么，根据第一性原理，从简单处入手——<strong>类型</strong>。</p>
+<p>提到类型，立刻会让人想起int类型、doule类型等，同样的，指针也是一种类型，但是指针类型并不是独立存在的，而是由其他类型派生出来的。由被引用类型T派生出的指针类型称为“指向T的指针”。指针类型是类型，所以也存在“指针类型的变量”和“指针类型的值”。但是糟糕的事，大多数人对指针类型、指针类型的值、指针类型的变量混为一谈，笼统地认为他们都是“指针”，所以对于基本的概念理解要提高警惕。</p>
+<p>现有的指针类型，因为有了指针类型，所以才有指针类型的变量和指针类型的值。</p>
+<p>例如在C语言中，int类型用来表示整数。因为int是“类型”，所以存在用于保存int类型的变量，当然也存在int类型的值。指针类型也是如此，既存在指针类型的变量，也存在指针类型的值。指针类型的值实际上就是内存的地址。</p>
+<h3 id="什么是指针">什么是指针？</h3>
+<p><strong>指针</strong>是一个变量，其值为某一个变量的地址，即，内存位置的直接地址。就像其他变量或常量一样，您必须在使用指针存储其他变量地址之前，对其进行声明。</p>
+<pre><code class="language-c++">type *var-name;
+</code></pre>
+<p>在这里，<strong>type</strong> 是指针的基类型，它必须是一个有效的 C++ 数据类型，<strong>var-name</strong> 是指针变量的名称。用来声明指针的星号 * 与乘法中使用的星号是相同的。但是，在这个语句中，星号是用来指定一个变量是指针。以下是有效的指针声明：</p>
+<pre><code class="language-c++">int    *ip;    /* 一个整型的指针 */
+double *dp;    /* 一个 double 型的指针 */
+float  *fp;    /* 一个浮点型的指针 */
+char   *ch;    /* 一个字符型的指针 */
+</code></pre>
+<p>所有指针的值的实际数据类型，不管是整型、浮点型、字符型，还是其他的数据类型，都是一样的，都是一个代表内存地址的长的十六进制数。不同数据类型的指针之间唯一的不同是，指针所指向的变量或常量的数据类型不同。</p>
+<p><strong>&amp;<strong>与</strong></strong>*区别使用方式：* p是一个值；p是一个地址；<strong>两者完全不相同</strong>。代表着p指向的地址的值，简单来说就是取值；&amp;是取地址符号，取的是地址；p是指针，可以理解为所指向的值的地址，* p就是取p指针指向的地址的值，&amp;a就是取a的地址。</p>
+<p>&amp;是取地址符号，其返回的是一个变量的地址；而*是一个单目运算符，用来访问指针的值所表示的地址上的变量，其返回的是根据地址所对应的数值；我们也俗称叫做“<strong>解引用</strong>”，可以作为左值使用。</p>
+<p>指针的运算符&amp;与*起到互作用：</p>
+<p>int xptr = &amp;x；</p>
+<p>*xptr = x；</p>
+<p>*&amp;xptr -&gt; *(&amp;xptr) -&gt; *(xptr的地址) -&gt; 得到那个地址上的变量 -&gt; xptr</p>
+<p>&amp;*xptr -&gt; &amp;( *xptr) -&gt; &amp;(x) -&gt; 得到x的地址，也就是xptr -&gt; xptr</p>
+<blockquote>
+<p>[百度百科]单目运算是指运算符包括<a href="https://baike.baidu.com/item/%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6/9324947?fromModule=lemma_inlink">算术运算符</a>、<a href="https://baike.baidu.com/item/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6/4123505?fromModule=lemma_inlink">逻辑运算符</a>、位逻辑运算符、位移运算符、<a href="https://baike.baidu.com/item/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97%E7%AC%A6/352774?fromModule=lemma_inlink">关系运算符</a>、自增自减运算符。-&gt;只需要一个变量参与即可完成相应的计算过程。</p>
+<p>[翁恺]左值之所以叫左值，是因为出现在赋值号左边的不是一个变量而是一个值(或者是表达式的结果)，是一个特殊的值，所以叫左值。a[0] = 2、*p = 3.</p>
+</blockquote>
+<pre><code class="language-c">int a = 5;//变量的声明与定义
+int *p = a;//指针变量的声明与定义
+32位架构之下scanf(&quot;%d&quot;,i)；不会报错-&gt;因为整数和地址是一样大的
+对于这个*而言，它可以靠近变量本身也可以靠近关键字，本身没有实际的区别
+</code></pre>
+<p>-&gt;变量的值是内存的地址；普通变量的值是实际的值；指针变量的值是具有实际值的变量的地址。</p>
+<p>在当使用*+变量名作为参数是，其定义的类型为指针类型，所以在传入参数时，务必传入变量的地址，而不是单纯的传入一个变量名。只有主调函数参数传入地址，被调函数才能根据定义的指针类型参数去复用地址，从而达到了改变主调函数中的值的操作。</p>
+<pre><code class="language-c"> void swap(int *a,int *b){
+     int temp = *a;
+     *a = *b;
+     *b = temp;
+ }
+</code></pre>
+<p>以上面的交换函数为例，调用swap函数时，必须传入的是两个地址(&amp;+变量名)；这是主调函数int *a,int *b才能根据传入的地址去解析地址所对应的数值。在内存中(无论是在堆空间还是栈空间)存放好的变量是不怕被覆盖的，换言之，他们是随时做好准备而去被覆盖的。</p>
+<p>这也是值传递和地址传递的区别。主调函数发生值传递后，传入的参数会在被调函数中的栈区中自己开辟新的空间存放传进来的参数值。这也是所谓的C语言的特性之一：单向值传递。而主调函数传入地址后，被调函数拿到传入的地址即解析，到堆区主调函数中(这里说的不严谨，因为当主调函数与被调函数都定义在栈区时，参数的传递也只在栈区中传递)去改变主调函数中参数的值。理解堆区和栈区是参数传递过程的中的重点问题。</p>
+<p><strong>应用场景：</strong></p>
+<ol>
+<li>函数返回多个值的时候：swap交换函数、寻找min与max函数 and so on…</li>
+<li>函数返回运算的状态可能会用到指针进行返回。让函数返回某些特殊的不属于有效范围内的值表示出错。</li>
+</ol>
+<pre><code class="language-c">int divide(int a,int b,int *res){
+    int ret = 1;
+    if(b == 0) ret = 0;
+    else{
+        *result = a/b;
+    }
+    return ret;
+}
+int main(){
+    int a = 2;
+    int b = 10;
+    int c;
+    if(divide(a,b,&amp;c)){
+        printf(&quot;%d%d%d&quot;,a,b,c);
+    }
+    
+}
+</code></pre>
+<p>初学者使用指针的常见错误：</p>
+<ul>
+<li>定义了指针变量，但是还没有开始指向任何变量，就开始使用指针。-&gt;野指针的产生</li>
+</ul>
+<p>C99标准下const与指针：</p>
+<p>-&gt;指针的const表示一旦得到了某个变量的地址，不能在指向其他的变量。指针不能被修改</p>
+<pre><code class="language-c">int *const q = &amp;i;//q是const
+*q = 26;//OK
+q++；//ERROR
+</code></pre>
+<p>-&gt;const所指的int表示不能通过有这个指针去修改所指向的变量。所指的东西不能被修改</p>
+<pre><code class="language-c">const int *p = &amp;i;
+*p = 26;//ERROR
+i = 26;//OK
+p = &amp;j;//OK
+</code></pre>
+<h3 id="数组指针">数组指针</h3>
+<p>数组参数的等价：</p>
+<ul>
+<li>int sum(int *a,int n);</li>
+<li>int sum(int *,int n);</li>
+<li>int sum(int a[ ],int n);</li>
+<li>int sum(int [ ],int n);</li>
+</ul>
+<p>数组与指针几点特性：</p>
+<ol>
+<li>数组变量是特殊的指针，数组本身就是表达地址。</li>
+<li>[]可以对数组做，也可以对指针做。</li>
+<li>*可以对数组做，也可以对指针做。</li>
+<li>数组变量是const指针，所以不能被赋值。</li>
+</ol>
+<p>其实数组在传入到子函数时，本质上就是传入子函数的<strong>首地址</strong>。</p>
+<p>指针函数参数，具备输入输出特性：</p>
+<p>main函数：</p>
+<pre><code class="language-c">int main(){
+	
+	test01();
+	test02();
+	test03();
+	return 0;
+}
+</code></pre>
+<p>输入特性：主调函数分配内存，被调函数中使用内存</p>
+<pre><code class="language-c">//栈区内存分配
+void func(char *c){
+	
+	strcpy(c,&quot;helloworld!&quot;);
+}
+
+void test02(){
+	char buf[100] = {0};
+	func(buf);
+	printf(&quot;%s\n&quot;,buf);
+	
+}
+//堆区内存分配
+
+void PrintString(char *str){
+	
+	printf(&quot;%s\n&quot;,str);
+}
+void test01(){
+	
+	//堆区内存分配
+	char *p = malloc(sizeof(char)*64);
+	memset(p,0,64);
+	strcpy(p,&quot;helloworld!&quot;);
+	PrintString(p);
+	
+}
+</code></pre>
+<p>输出特性：被调函数分配内存，主调函数中使用内存</p>
+<pre><code class="language-c">//输出特性：被调函数创建内存，主调函数使用内存
+
+void allocateSpace(char **pp){
+	
+	char *temp = malloc(sizeof(char)*64);
+	memset(temp,0,64);
+	strcpy(temp,&quot;helloworld!&quot;);
+	*pp = temp;
+	
+	
+}
+void test03(){
+	
+	char *p = NULL;
+	allocateSpace(&amp;p);
+	printf(&quot;%s\n&quot;,p);
+	
+	
+}
+</code></pre>
+<p><strong>数组指针与指针数组</strong></p>
+<ul>
+<li>
+<p>数组指针：是指一个指向数组的指针，它其实<em>还是一个指针</em>，只不过是<em>指向数组</em>而已	int (*p)[10]</p>
+</li>
+<li>
+<p>指针数组：是指一个数组里面<em>装着指针</em>，也即指针数组<em>是一个数组</em> int *a[10]</p>
+</li>
+</ul>
+<p>指针数组的使用：</p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+int main(){
+    int a = 16, b = 932, c = 100;
+    //定义一个指针数组
+    int *arr[3] = {&amp;a, &amp;b, &amp;c};//也可以不指定长度，直接写作 int *arr[]
+    //parr 是指向数组 arr 的指针，确切地说是指向 arr 第 0 个元素的指针，
+    //它的定义形式应该理解为int *(*parr)，括号中的*表示 parr 是一个指针，括号外面的int *表示 parr 指向的数据的类型。
+    //arr 第 0 个元素的类型为 int *，所以在定义 parr 时要加两个 *。
+    int **parr = arr;
+    printf(&quot;%d, %d, %d\n&quot;, *arr[0], *arr[1], *arr[2]);//16, 932, 100
+    printf(&quot;%d, %d, %d\n&quot;, **(parr+0), **(parr+1), **(parr+2));//16, 932, 100
+ 
+    return 0;
+}
+
+
+#include &lt;stdio.h&gt;
+int main(){
+    char *str[3] = {
+        &quot;c.biancheng.net&quot;,
+        &quot;C语言中文网&quot;,
+        &quot;C Language&quot;
+    };
+    printf(&quot;%s\n%s\n%s\n&quot;, str[0], str[1], str[2]);
+    /*
+        运行结果：
+        c.biancheng.net
+        C语言中文网
+        C Language
+    */
+ 
+    return 0;
+}
+</code></pre>
+<p>数组指针的使用：</p>
+<pre><code class="language-c">#include&lt;stdio.h&gt;
+int main(void)
+{
+    char a[5]={'A','K','C','G','L'};    
+    char (*p)[5]=&amp;a;//&amp;a代表的是整个数组的首地址
+    //char (*p)[5]=a;这样是错误的，因为a代表第一个元素的首地址
+    printf(&quot;%c %c %c&quot;,**p,*(*p+1),*(*p+3));//输出：A K G
+    return 0;
+}
+</code></pre>
+<h3 id="结构体指针">结构体指针</h3>
+<p>**-&gt;**前是指针，而 . 前是结构体变量</p>
+<p><strong><code>.</code>用于类的实例，而<code>-&gt;</code>用于类的指针</strong></p>
+<p><code>.</code>：成员访问表达式指定由其左操作数指定的结构或联合的命名成员，它具有与左操作数相同的值类别。</p>
+<p><code>-&gt;</code>：通过指针表达式的成员访问指定由其左操作数指向的结构或联合类型的命名成员。它的值l类别始终是左值。</p>
+<p>简单点说就是：</p>
+<ul>
+<li>A-&gt;a表示A是指向结构体的指针</li>
+<li>A.a表示A是结构体</li>
+<li>A-&gt;a等效于(*A).a</li>
+</ul>
+<p>-&gt;比如C++中一个类Class Student;里面有个公有成员变量test</p>
+<p>如果你声明这个类的对象Student s;那么你要对test操作要用&quot;.&quot;	 s.test</p>
+<p>如果你声明这个类的对象Student *s为指针类型的话，那么你要对test操作要用&quot;-&gt;&quot;	s-&gt;test</p>
+<p>结构体指针的等价性：</p>
+<p>int *p =  &amp;结构体变量；</p>
+<ul>
+<li>结构体变量名.成员名</li>
+<li>(*p).成员名</li>
+<li>p-&gt;成员名</li>
+</ul>
+<h3 id="函数指针">函数指针</h3>
+<p>内存中每个指令都顺序存放的，每个指令都有一个与其相对应的地址；而函数反应到内存中就是一大块指令的集合。</p>
+<pre><code class="language-c">#include&lt;stdio.h&gt;
+
+int Add(int a,int b){
+    return a + b;
+}
+int main(){
+    int c;
+    int (*p)(int ,int);
+    p = &amp;Add;
+    c = (*p)(2,3);
+    ------------------
+    p = Add;
+    c = p(2,3);
+    ------------------
+    printf(&quot;%d&quot;,c);
+    return 0;
+    //程序得到的结果为5
+}
+</code></pre>
+<h3 id="水煮易混指针">水煮易混指针</h3>
+<ul>
+<li>int *a[5]</li>
+</ul>
+<p>这是一个<strong>指针数组</strong>，每一个元素都是一个int *指针变量,指向int类型的地址。指向 *a[5]时应该使用二级指针而不是一级指针。</p>
+<ul>
+<li>int (*a)[5]</li>
+</ul>
+<p>这是一个<strong>数组指针</strong>，它是一个指针变量，占有8个字节存地址编号，它指向一个数组，二维数组加一偏移后指向下一行，也可以将&amp;+一维数组赋值给它。</p>
+<ul>
+<li>int **p</li>
+</ul>
+<p>这是一个<strong>指针的指针</strong>，存放的是保存指针的地址。</p>
+<ul>
+<li>int *f(void)</li>
+</ul>
+<p>它是一个<strong>函数</strong>的声明，返回的是一个函数的地址-&gt;int *类型。</p>
+<ul>
+<li>int (*f)(void)</li>
+</ul>
+<p>f是个<strong>函数的指针变量</strong>，存放函数的地址，它指向的函数必须有一个int类型的返回值，没有参数。</p>
+<h2 id="结构体">结构体</h2>
+<p>结构体的作用：<code>把一些相关的变量组合起来，以一个整体形式对对象进行描述</code></p>
+<p>【注】:</p>
+<ol>
+<li>只有结构体变量才分配地址，而结构体的定义是不分配空间的</li>
+<li>结构体中各成员的定义和之前的变量定义一样，但在定义时也不分配空间</li>
+<li>结构体变量的声明需要在主函数之上或者主函数中声明，如果在主函数之下则会报错</li>
+<li>c语言中的结构体不能直接进行强制转换，只有结构体指针才能进行强制转换</li>
+<li>相同类型的成员是可以定义在同一类型下</li>
+</ol>
+<p>定义结构体变量以后，系统就会为其分配内存单元。</p>
+<p><strong>在对结构体变量初始化时，要对结构体成员一一赋值，不能跳过前面成员变量，而直接给后面成员赋初值。</strong></p>
+<p>用结构体指针变量访问结构体变量成员有以下两种方式：<br>
+(*p).属性 //这里的括号不能少<br>
+p-&gt;属性</p>
+<h2 id="全局变量与宏">全局变量与宏</h2>
+<h3 id="全局变量">全局变量</h3>
+<p>定义在函数的外部的变量称为全局变量，全局变量具有全局的生存期和作用域。他们与任何函数都无关，任何函数都可以调用。没有初始化的全局变量会被赋予0值，指针会得到NULL值，他们的初始化在main函数之前。全局变量禁止套娃</p>
+<pre><code class="language-c">int gall = 12;
+void f(){
+    gall += 2;
+    printf(&quot;value in f is %d&quot;,gall);
+    
+}
+
+int main(){
+    f();
+    printf(&quot;value in main is %d&quot;,gall);
+    
+}
+</code></pre>
+<h3 id="静态全局变量">静态全局变量</h3>
+<p>在本地变量定义时前面加上static就变成了静态本地变量。函数离开时，静态本地变量会保持其原来的值，静态本地变量的初始化只会在第一次进入这个函数时做，以后进入函数会保持和上次离开时的值。</p>
+<pre><code class="language-c">#include&lt;stdio.h&gt;
+int gall = 12;
+//int gall = 12;
+void f(){
+    int all1 = 2;//不加static为本地变量
+    static int all2 = 2; //加static
+    //遵守的原则：以后进入函数会保持上次离开时的值
+    printf(&quot;value in f is %d&quot;,all);
+    all += 2;
+    printf(&quot;value in f is %d&quot;,all);
+    
+}
+
+int main(){
+    f();
+    f();
+    f();
+  
+}
+实际上在内存中：gall地址0x3800c，all2地址0x38010两者是紧挨着的，而静态本地变量与本地变量all1区相隔十万八千里。
+</code></pre>
+<p>静态本地变量实际上是特殊的全局变量，他们位于相同的内存区域。静态本地变量具有全局的生存区，函数内局部作用域。全局生存期，本地作用域。</p>
+<p>指针作为返回值返回本地变量是危险的，返回全局变量或者静态本地变量是安全的，最好的做法是返回指针。</p>
+<p>小贴士：</p>
+<ol>
+<li>不要使用全局变量来作为函数之间的参数传递的结果</li>
+<li>尽量避免使用全局变量</li>
+<li>*使用全局变量和静态本地变量时函数的线程是不去安全的</li>
+</ol>
+<h3 id="编译预处理与宏">编译预处理与宏</h3>
+<p>#include:</p>
+<p>#开有就是编译预处理指令，他们不是C语言的指令，但是他们不可或缺。#define来定义一个宏。</p>
+<p>#define <name> <value></p>
+<p>宏：#define PI 3.14；因为不是C语言的语句所以结尾没必要加分号！名字必须是一个单词，值可以是任何东西。宏也可以带着参数，形成函数的宏。</p>
+<p>#define cube(x) (x * x * x)</p>
+<p>一切都要有括号，整个值都要有括号</p>
+<p>#define MIN(a,b)	((a&gt;b)?(b):(a))</p>
+<h3 id="ifndef的用法">#ifndef的用法</h3>
+<pre><code class="language-c">#ifndef &lt;标识&gt;
+#define &lt;标识&gt;
+
+......
+......
+
+#endif
+</code></pre>
+<p>#ifndef起到的效果是防止一个源文件(.cpp)两次包含同一个头文件(.h)，而不是防止两个源文件包含同一个头文件。它是<code>if not define</code> 的简写，是宏定义的一种，实际上确切的说，这应该是预处理功能三种（宏定义、文件包含、条件编译）中的一种——条件编译。</p>
+<p>&lt;标识&gt;在理论上来说可以是自由命名的，但每个头文件的这个“标识”都应该是唯一的。标识的命名规则一般是头文件名全大写，前后加下划线，并把文件名中的“.”也变成下划线，如：stdio.h</p>
+<p>#ifndef <em>STDIO_H</em><br>
+#define <em>STDIO_H</em></p>
+<p>......</p>
+<p>#endif</p>
+<p>使用#ifndef可以避免下面这种错误：如果在h文件中定义了全局变量，一个c文件包含同一个h文件多次，如果不加#ifndef宏定义，会出现变量重复定义的错误；如果加了#ifndef，则不会出现这种错误。</p>
+<p><strong>条件指示符#ifndef 的最主要目的是防止头文件的重复包含和编译。</strong></p>
+<h3 id="const关键字">const关键字</h3>
+<p>关键字const用来定义常量，如果一个变量被const修饰，那么它的值就不能再被改变。与前面的#define(预编译指令)相比，const具有如下的优点：</p>
+<ol>
+<li>预编译指令只是对值进行简单的替换，不能进行类型检查</li>
+<li>可以保护被修饰的东西，防止意外修改，增强程序的健壮性</li>
+<li>编译器通常不为普通const常量分配存储空间，而是将它们保存在符号表中，这使得它成为一个编译期间的常量，没有了存储与读内存的操作，使得它的效率也很高</li>
+</ol>
+<p>需要注意的是，用const修饰变量时，一定要给变量初始化，否则之后就不能再进行赋值了。</p>
+<p>使用const修饰变量后，可以高枕无忧的进行函数的参数传递，但是不可以</p>
+<h2 id="c的引用">C++的引用</h2>
+<p>准确来说就是给变量<strong>起别名</strong>；准确来说实际的作用和指针类似。-&gt;共同操纵内存</p>
+<pre><code class="language-c">int a = 10;//栈区存放内存地址
+int &amp;b = a;
+cout  &lt;&lt; &quot;a =&quot;&lt;&lt; a &lt;&lt; endl;
+cout  &lt;&lt; &quot;b =&quot;&lt;&lt; b &lt;&lt; endl;
+b = 20;
+cout  &lt;&lt; &quot;a =&quot;&lt;&lt; a &lt;&lt; endl;
+cout  &lt;&lt; &quot;b =&quot;&lt;&lt; b &lt;&lt; endl;
+</code></pre>
+<ol>
+<li>引用必须初始化，必须开始的时候就要初始化。int &amp;b是错误的；int &amp;b = 一个变量名;</li>
+<li>引用一旦初始化后，就不可以更改了。</li>
+</ol>
+<h3 id="引用作为函数的参数">引用作为函数的参数</h3>
+<p>作用：函数传参时，可以利用引用技术让形参修饰实参。</p>
+<p>优点:可以简化指针修改实参。</p>
+<pre><code class="language-c">//交换函数三种方法实现
+//值传递
+void swap(int a,int b){
+    int temp  = a;
+    a = b;
+    b  =temp;
+    
+}
+//地址传递
+void swap(int *a,int *b){
+    int temp  = *a;
+    *a = *b;
+    *b  =temp;
+    
+}
+swap(&amp;a,&amp;b);
+//引用传递
+void swap(int &amp;a,int &amp;b){
+    int temp  = *a;
+    *a = *b;
+    *b  =temp;
+}
+swap(a,b);//本质上a就是上面子函数中形参的别名 
+</code></pre>
+<p>通过引用参数产生的效果和使用指针的产生的效果是一样的，引用的语法更加简介清晰。</p>
+<h3 id="引用作为函数的返回值">引用作为函数的返回值</h3>
+<ul>
+<li>不要返回局部变量的引用</li>
+</ul>
+<pre><code class="language-c">int&amp; func(){
+    int a = 1;
+    return a;
+}
+
+int main(){
+    
+    int &amp;ref = func();
+    cout &lt;&lt; &quot;ref=&quot; &lt;&lt; ref &lt;&lt;endl;//第一次打ref的值是1，因为编译器做了保留
+    cout &lt;&lt; &quot;ref=&quot; &lt;&lt; ref &lt;&lt;endl;//第二次打是个乱码、错误值，因为局部变量释放
+}
+</code></pre>
+<ul>
+<li>函数的调用可以作为左值</li>
+</ul>
+<pre><code class="language-c">int&amp; func(){
+    static int a = 1;
+    return a;
+}
+
+int main(){
+    
+    int &amp;ref = func();
+    cout &lt;&lt; &quot;ref=&quot; &lt;&lt; ref &lt;&lt;endl;
+    cout &lt;&lt; &quot;ref=&quot; &lt;&lt; ref &lt;&lt;endl;//结果都是1
+    
+    func() = 200;
+    cout &lt;&lt; &quot;ref=&quot; &lt;&lt; ref &lt;&lt;endl;
+    cout &lt;&lt; &quot;ref=&quot; &lt;&lt; ref &lt;&lt;endl;//结果都是200
+}
+</code></pre>
+<pre><code class="language-c">void test(){
+    static int a = 10;
+    return a;
+}
+int &amp;ref = test();
+cout  &lt;&lt; &quot;ref =&quot;&lt;&lt;ref &lt;&lt; endl;
+cout  &lt;&lt; &quot;ref =&quot;&lt;&lt;ref &lt;&lt; endl;
+
+test() = 1000;//函数的调用可以作为左值
+cout  &lt;&lt; &quot;ref =&quot;&lt;&lt;ref &lt;&lt; endl;
+cout  &lt;&lt; &quot;ref =&quot;&lt;&lt;ref &lt;&lt; endl;
+</code></pre>
+<h3 id="引用的本质">引用的本质</h3>
+<p>引用的本质在C++中内部的实现就是一个指针常量。引用一旦初始化，就不可以进行更改。</p>
+<p>C++推荐使用引用技术，因为语法方便，所有的指针操作编译器都帮我们做好了。</p>
+<pre><code class="language-c">//编译器发现是引用的话，转化为 int* const ref = &amp;a;
+void func(int &amp;ref){
+    int ref = 100;
+}
+
+int main(){
+    //自动转换为 int* const ref = &amp;a;指针常量是指针指向不可以改变，也说明了为什么引用不可以更改。
+    int &amp;ref = a;
+    ref = 20;//内部发现ref是引用以后，自动帮我们转换为：*ref = 20；
+    
+    cout &lt;&lt; &quot;a&quot; &lt;&lt; a &lt;&lt;endl;
+    cout &lt;&lt; &quot;ref&quot; &lt;&lt; ref &lt;&lt;endl;
+    
+    func(a);
+    return 0;
+}
+</code></pre>
+<p>修饰形参放置</p>
+<pre><code class="language-c">void  PrintValue(const int &amp;x){
+    x = &quot;新值&quot;;//加上const以后，这句话就会报错
+    cout &lt;&lt; &quot;val = &quot; &lt;&lt; endl;
+}
+
+//对于常量的引用
+int main(){
+    int a = 10;
+    int &amp;ref = a;
+    //以上内容是合法的，但是如果左值赋给了一个新的数值就会引起非法操作
+    ref = 20;//这样操作是非法的，20下面会加上红色波浪线报错提示。
+  
+    //加上const之后，编译器将代码修改为 int temp = 20 const int &amp;ref = temp;
+    const int &amp;ref = 20;
+    
+    int x = 10;
+    PrintValue(x);//为了避免在子函数中对实参进行修改，可以在形参前面加上const关键字
+    cout &lt;&lt; &quot;val = &quot; &lt;&lt; endl;
+}
+</code></pre>
+<h2 id="动态内存分配">动态内存分配</h2>
+<ol>
+<li>程序运行过程中，需要根据自身大小自由分配空间</li>
+<li>按需分配</li>
+<li>分配在堆区，一般使用特定的函数进行分配</li>
+</ol>
+<p>-&gt;free函数释放p指针指向的内存。内存大小有限，好借好还、再借不难。</p>
+<p>free(p);</p>
+<p>malloc函数无法避免内存的碎片化。</p>
+<h3 id="malloc">malloc</h3>
+<pre><code class="language-c">#include&lt;stdio.h&gt;
+#include&lt;stdlib.h&gt;
+void *malloc(int size){
+    
+}//在堆区中分配一块长度为size的连续内存块，用来存放内存说明符号指定的数据类型，函数返回 void *指针
+
+int main(){
+    
+    int *p = (int *)malloc(size);//(int *)注意强转
+}
+
+</code></pre>
+<p>返回值：</p>
+<ul>
+<li>分配内存空间的起始地址(分配成功)</li>
+<li>NULL(分配失败)</li>
+</ul>
+<h3 id="calloc">calloc</h3>
+<p>在内存堆中，申请n块，每块sizeof(指定数据类型)个字节的字节的连续区域。</p>
+<pre><code class="language-c">#include&lt;stdio.h&gt;
+#include&lt;stdlib.h&gt;
+void *calloc(int size){
+    
+}//在堆区中分配一块长度为size的连续内存块，用来存放内存说明符号指定的数据类型，函数返回 void *指针
+
+int main(){
+    //本质上就是一个二维的数组指针
+    datatype *p = (datatype *)calloc(n,sizeof(datatype));//(datatype *)注意强转
+}
+</code></pre>
+<h3 id="memset函数">memset函数</h3>
+<pre><code class="language-c">void *memset(void *ptr,int value,size_t num);
+//memset函数是将ptr指针指向的内存空间的num个字节全部赋值为value；
+int *str = (int *)malloc(sizeof(int)*100);
+if(!str) return;
+memset(str,0,100);
+for(int i = 0;i &lt; sizeof(str)/sizeif(int);i++){
+    printf(&quot;%d\t&quot;,str[i]);
+}
+
+</code></pre>
+<h2 id="文件操作">文件操作</h2>
+<h3 id="初识文件">初识文件</h3>
+<p>文件是用来存放程序、文档、音频、视频数据、图片等数据。文件是存放在磁盘上的数据集合。</p>
+<p>**磁盘文件：**一组相关数据的集合，通常存放在外部介质上，使用时才调入内存</p>
+<p>**设备文件：**在OS中把每一个与主机相连的输入、输出设备看做一个文件，把他们的输入、输出等同于磁盘文件的读和写。</p>
+<p>键盘：标准输入文件</p>
+<p>屏幕：标准输出文件</p>
+<p>C语言中文件的操作：</p>
+<p>FILE *fopen(const char *filename, const char *mode);</p>
+<p>返回值：</p>
+<p>fopen函数返回新打开文件的<strong>文件指针</strong>；</p>
+<p>如果此文件不能打开，则返回<strong>NULL指针</strong>。</p>
+<p>&quot;r&quot;	打开文件仅供读取	必须存在</p>
+<p>&quot;w&quot;	创建新文件仅供写入	若存在，则清空后再写入</p>
+<p>&quot;a&quot;	打开文件附加写入	若不存在，则创建新文件写入</p>
+<p>&quot;r+&quot;	打开文件供读取并写入	必须存在</p>
+<p>&quot;w+&quot;	创建新文件供读取并写入	若存在，则清空后再写入</p>
+<p>&quot;a&quot;	打开文件读取并附加写入	若不存在，则创建新文件写入</p>
+<pre><code class="language-c">FILE* fp = fopen('file','r');
+if(fp){
+    fscanf(fp,...);
+    fclose(fp);
+}
+else{
+    
+}
+</code></pre>
+<h2 id="编码-运算与变量">编码、运算与变量</h2>
+<p>数据存储量的量级增长：</p>
+<p>1字节1KB=8比特bits</p>
+<p>1兆字节1MB=1024KB</p>
+<p>1吉字节1GB=1024MB</p>
+<p>1太字节1TB=1024GB</p>
+<p>千万亿字节1PB拍字节 = 1024TB</p>
+<p>百亿亿字节1EB艾字节 = 1024PB</p>
+<p>十万亿亿字节1ZB泽字节 = 1024EB</p>
+<p>一亿亿亿字节1YB尧字节 = 1024ZB</p>
+<p>一千亿亿亿字节1BB = 1024YB</p>
+<h3 id="补码的作用">补码的作用</h3>
+<p>组成原理要考！</p>
+<p>计算机的CPU无法进行减法运算，只能做加法运算。CPU有一个逻辑单元交加法器，只能进行加法操作。CPU中包含三部分：加法器、移位器、译码器。对于减法操作：2-5-&gt;2+(-5)的操作。由于计算机只能存储0和1，编写程序来看-5是如何存储的。</p>
+<p>在数据的存储中，有两种存储形式，*大端存储和小端存储。*所有的数据都是在内存当中存的，而内存当中的基本单位是<strong>字节</strong>数据访存的基本单位是字节的话，那么一个整形变量（int）就有四个字节，那么就意味着数据在存储过程中会被划分为四块。<strong>数据按照字节序为单位，也有高权值位，低权值位之别的。按空间来划分的话，有高地址，低地址之分。</strong></p>
+<p>两种存储方案：<br>
+<em>大端</em>：按照字节位单位，低权值位数据存储在高地址处，就叫做大端；<br>
+<em>小端</em>：按照字节位单位，低权值位数据存储在低地址处，就叫做小端。</p>
+<p>我们以 int a = -10 为例：</p>
+<p>（因为int类型占有四个字节，而一个字节等于8个bite位）</p>
+<p>（说明:数据在内存中是以<strong>补码</strong>的形式存储的）</p>
+<p>所以将其转化为二进制原码为:</p>
+<p>10000000 00000000 00000000 00001010</p>
+<p>反码(符号位不变，其他位按位取反):</p>
+<p>11111111 11111111 11111111 11110101</p>
+<p>补码（反码+1）：</p>
+<p>11111111 11111111 11111111 11110110</p>
+<p>转化为十六进制为:</p>
+<p>ＦＦ　ＦＦ　ＦＦ　Ｆ６</p>
+<p>大端存储：	低地址-&gt;高地址：ＦＦ　ＦＦ　ＦＦ　Ｆ６</p>
+<p>小段存储：	高地址-&gt;低地址：Ｆ６  ＦＦ　ＦＦ　ＦＦ</p>
+<p>5		0000 0101-&gt;一个字节 原码</p>
+<p>-5	取反后加1：1111 1010-&gt;1111 1011 用补码来表示负数</p>
+<p>对于有符号数而言，最高位为1表示负数，最高位为0表示正数。最高位为1则自然表示该数据的补码，加1取反则得到相反数</p>
+<h3 id="反码的作用">反码的作用</h3>
+<p>反码是计算机中一种机器码的表示。对于单个数值(二进制的0和1)而言，对其进行反操作就是将0变成1，将1变成0。正数的反码和原码一致，负数的反码就是在其原码的基础之上，符号位不变的情况下，其他位置取反。</p>
+<p>反码是历史遗留的残物。作用就是解决对于负数补码的求值。</p>
+<p>负数的补码=负数的原码-&gt;负数的反码-&gt;反码加1</p>
+<h3 id="int数值型">int数值型</h3>
+<p>括号可以缺省，无符号只能存储非负数。</p>
+<ul>
+<li>整型变量的类型：</li>
+<li>有符号基本整型：(signed)int</li>
+<li>有符号短整型：(signed)short(int)</li>
+<li>有符号长整型：(signed)long(int)</li>
+<li>无符号基本整型：unsigned int</li>
+<li>无符号短整型：unsigned short(int)</li>
+<li>无符号长整型：unsigned long(int)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">字节数</th>
+<th style="text-align:center">范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">(signed)int</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>−</mo><msup><mn>2</mn><mn>31</mn></msup></mrow><annotation encoding="application/x-tex">-2^{31}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span>~<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mn>31</mn></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2^{31}-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span></td>
+</tr>
+<tr>
+<td style="text-align:center">(signed)short(int)</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>−</mo><msup><mn>2</mn><mn>15</mn></msup></mrow><annotation encoding="application/x-tex">-2^{15}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight">5</span></span></span></span></span></span></span></span></span></span></span></span>~<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mn>15</mn></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2^{15}-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight">5</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span></td>
+</tr>
+<tr>
+<td style="text-align:center">(signed)long(int)</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>−</mo><msup><mn>2</mn><mn>31</mn></msup></mrow><annotation encoding="application/x-tex">-2^{31}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span>~<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mn>31</mn></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2^{31}-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 或 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>−</mo><msup><mn>2</mn><mn>63</mn></msup></mrow><annotation encoding="application/x-tex">-2^{63}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">6</span><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span></span>~<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mn>63</mn></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2^{63}-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">6</span><span class="mord mtight">3</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span></td>
+</tr>
+<tr>
+<td style="text-align:center">unsigned int</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>~<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mn>32</mn></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2^{32}-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span></td>
+</tr>
+<tr>
+<td style="text-align:center">unsigned short(int)</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">0-65535</td>
+</tr>
+<tr>
+<td style="text-align:center">unsigned long(int)</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>~<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mn>32</mn></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2^{32}-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 或 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>~<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mn>64</mn></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2^{64}-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">6</span><span class="mord mtight">4</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span></td>
+</tr>
+</tbody>
+</table>
+<p>Linux OS下long类型占有8个字节</p>
+<p>为啥符号位的字节数要比符号位少一次幂呢？因为符号位</p>
+<p>最小的负数是：</p>
+<p>1000 0000 0000 0000 0000 0000 0000 0000</p>
+<p>而不是：</p>
+<p>1111 1111 1111 1111 1111 1111 1111 1111</p>
+<blockquote>
+<p>避免溢出现象的发生：</p>
+<p>掌握字符型数值的取值范围！</p>
+</blockquote>
+<h3 id="浮点型数据">浮点型数据</h3>
+<p>在C语言中，浮点型数据用double和float表示。float占用4个字节，double占用8个字节。与整数形式不同，浮点数存储是按照指数形式存储的。系统会把一个浮点数分成小数部分M和指数部分E，分别存放。</p>
+<p>0/1表示符号位，指数部分有8位，小数部分有23位。</p>
+<p>浮点数的取值范围要看指数部分的取值：指数部分有效位数是8位，所以范围就是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mrow><mo>−</mo><mn>127</mn><mi mathvariant="normal">到</mi><mn>128</mn></mrow></msup></mrow><annotation encoding="application/x-tex">2^{-127到128}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span><span class="mord mtight">2</span><span class="mord mtight">7</span><span class="mord cjk_fallback mtight">到</span><span class="mord mtight">1</span><span class="mord mtight">2</span><span class="mord mtight">8</span></span></span></span></span></span></span></span></span></span></span></span>,求得的结果用科学计数法表示就是下面float的范围。有效部分是小数部分，23位就是2的23次方=8388608不能表示到9999999.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">数据类型</th>
+<th style="text-align:center">位数</th>
+<th style="text-align:center">范围</th>
+<th style="text-align:center">有效位数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">float</td>
+<td style="text-align:center">32</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><msup><mn>0</mn><mrow><mo>−</mo><mn>37</mn></mrow></msup></mrow><annotation encoding="application/x-tex">10^{-37}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">3</span><span class="mord mtight">7</span></span></span></span></span></span></span></span></span></span></span></span>~^10{38}-1$</td>
+<td style="text-align:center">6-7</td>
+</tr>
+<tr>
+<td style="text-align:center">double</td>
+<td style="text-align:center">64</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><msup><mn>0</mn><mrow><mo>−</mo><mn>307</mn></mrow></msup></mrow><annotation encoding="application/x-tex">10^{-307}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">3</span><span class="mord mtight">0</span><span class="mord mtight">7</span></span></span></span></span></span></span></span></span></span></span></span>~^10{308}-1$</td>
+<td style="text-align:center">15-16</td>
+</tr>
+<tr>
+<td style="text-align:center">long double</td>
+<td style="text-align:center">128</td>
+<td style="text-align:center"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><msup><mn>0</mn><mrow><mo>−</mo><mn>4931</mn></mrow></msup></mrow><annotation encoding="application/x-tex">10^{-4931}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">4</span><span class="mord mtight">9</span><span class="mord mtight">3</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span>~<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><msup><mn>0</mn><mn>4932</mn></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">10^{4932}-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">4</span><span class="mord mtight">9</span><span class="mord mtight">3</span><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span></td>
+<td style="text-align:center">18-19</td>
+</tr>
+</tbody>
+</table>
+<p>IEEE-754标准:</p>
+<p>0x:40 90 00 00:</p>
+<p>0o:0 <strong>100 0000 1</strong>001 0000 0000 0000 0000 0000</p>
+<h3 id="字符串常量">字符串常量</h3>
+<p>转义字符：</p>
+<p>\n 换行</p>
+<p>\t 横向跳格</p>
+<p>\r 回车</p>
+<p>\ \ 反斜杠</p>
+<p>\b 退格</p>
+<p>\0 空字符用于标识字符串的结尾，不是空格，无法打印</p>
+<h3 id="位运算">位运算</h3>
+<pre><code class="language-c">&lt;&lt;:左移
+&gt;&gt;:右移
+~: 按位取反
+|: 按位或
+^: 按位异或
+&amp;: 按位与
+</code></pre>
+<p>一个变量左移与右移之后类似于++或者—–其本身很不会发生改变，除非对其自身进行赋值。</p>
+<p>**左移：**丢弃高位，低位以0补充，相当于乘以2.申请内存是需要用到左移。例如要申请一个G的内存，可以使用malloc(1&lt;&lt;20)。</p>
+<p>**右移：**低位丢弃，正数高位补0，负数高位补1，相当于除以2。移位对于乘除法来说效率要高，负数右移对偶数来说是除以2，但是对于技术来说是先减1后除以2.-无符号数右移时的高位补1.</p>
+<p>**异或：**相同的数字进行异或是结果为0；任何数字和0异或的结果时其本身。数字位相同为0，相异为1。</p>
+<p>**按位取反：**数位上的0变成1,1变成0。正数按位取反的结果是其相反数-1.</p>
+<p>**按位与和按位或：**用两个数字的每一维进行与和或。与是前者，或是后者。</p>
+<ul>
+<li>&amp; 与：全1则1，有0则0</li>
+<li>| 或：全0为0，有1则1</li>
+<li>~ 非：按未取反</li>
+<li>^ 异或：相同为0，不同为1</li>
+<li>&gt;&gt; 右移</li>
+<li>&lt;&lt; 左移</li>
+</ul>
+<p>两个数取异或后得到的结果再分别与自身取异或，便可以得到两个数交换的结果。</p>
+<hr>
+<h2 id="c-基本的输入输出">C++ 基本的输入输出</h2>
+<p>C++ 标准库提供了一组丰富的输入/输出功能，我们将在后续的章节进行介绍。本章将讨论 C++ 编程中最基本和最常见的 I/O 操作。</p>
+<p>C++ 的 I/O 发生在流中，流是字节序列。如果字节流是从设备（如键盘、磁盘驱动器、网络连接等）流向内存，这叫做<strong>输入操作</strong>。如果字节流是从内存流向设备（如显示屏、打印机、磁盘驱动器、网络连接等），这叫做<strong>输出操作</strong>。</p>
+<h3 id="io-库头文件">I/O 库头文件</h3>
+<p>下列的头文件在 C++ 编程中很重要。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">头文件</th>
+<th style="text-align:left">函数和描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><iostream></td>
+<td style="text-align:left">该文件定义了 <strong>cin、cout、cerr</strong> 和 <strong>clog</strong> 对象，分别对应于标准输入流、标准输出流、非缓冲标准错误流和缓冲标准错误流。</td>
+</tr>
+<tr>
+<td style="text-align:center"><iomanip></td>
+<td style="text-align:left">该文件通过所谓的参数化的流操纵器（比如 <strong>setw</strong> 和 <strong>setprecision</strong>），来声明对执行标准化 I/O 有用的服务。</td>
+</tr>
+<tr>
+<td style="text-align:center"><fstream></td>
+<td style="text-align:left">该文件为用户控制的文件处理声明服务。我们将在文件和流的相关章节讨论它的细节。</td>
+</tr>
+</tbody>
+</table>
+<p>C++ 编译器根据要输出变量的数据类型，选择合适的流插入运算符来显示值。&lt;&lt; 运算符被重载来输出内置类型（整型、浮点型、double 型、字符串和指针）的数据项。</p>
+<p>流插入运算符 &lt;&lt; 在一个语句中可以多次使用，如上面实例中所示，<strong>endl</strong> 用于在行末添加一个<strong>换行符</strong>。</p>
+<p>using namespace std的意思是使用命名空间 std。C++标准库中的类和函数是在命名空间 std中声明的，因此程序中如果需要用到 C++标准库，（此时就需要用 #include命令行）用using namespace std作声明，表示要用到命名空间 std中的内容。</p>
+<p>如果程序有输入或输出时，必须使用#include <iostream>命令以提供必要的信息，同时要用using namespace std; 使程序能够使用这些信息，否则程序编译时将出错。</p>
+<p>cin&gt;&gt;输入流&gt;&gt;endl；</p>
+<p>cin&gt;&gt;变量1&gt;&gt;变量2&gt;&gt;变量3&gt;&gt;变量n&gt;&gt;endl；</p>
+<p>cout&lt;&lt;输出流&lt;&lt;endl;</p>
+<p>cout&lt;&lt;表达式1&lt;&lt;表达式2&lt;&lt;表达式3&lt;&lt;表达式n&lt;&lt;endl；</p>
+<p>在定义流对象时，系统会在<strong>内存</strong>中开辟一段<strong>缓冲区</strong>，用来暂存输入输出流的数据。先把插入的数据顺序存放输出缓冲区中，直到输出缓冲区满或遇到 cout语句中的 endl；此时将缓冲区中已有的数据一起输出，并清空缓冲区。输出流中的数据在系统默认的设备( 一般为显示器) 输出。</p>
+<p>不能用 cin语句把空格字符和回车换行符作为字符输入给字符变量，它们将被跳过。如果想将空格字符或回车换行符(或任何其他键盘上的字符)输入给字符变量，用getchar函数。在组织输入流数据时，要仔细分析 cin语句中变量的类型，按照相应的格式输入，否则容易出错。</p>
+<p>C++还保留了C语言中用于输入和输出单个字符的函数，使用很方便。其中最常用的有 <strong>getchar</strong>函数和<strong>putchar</strong>函数。在C 语言中是用 printf函数进行输出，用 scanf函数进行输入的。 C++保留了C语言的这一用法。</p>
+<p>常用I/O流控制符	描述</p>
+<p>dec	转换整数的基数为十进制</p>
+<p>oct	转换整数的基数为八进制</p>
+<p>hex	转换整数的基数为十六进制</p>
+<p>showbase	在输出中显示基数指示符</p>
+<p>uppercase	十六进制输出时一律用大写字母</p>
+<p>scientific	科学计数法显示浮点数</p>
+<p>fixed	定点小数形式显示浮点数</p>
+<p>showpoint	把带有小数点的浮点数值输入到流中</p>
+<p>showpos	正整数前带有&quot;+&quot;号</p>
+<p>unitbuf	输出操作后立即刷新流</p>
+<p>left	输出数据在本域宽范围内左对齐</p>
+<p>right	输出数据在本域宽范围内右对齐</p>
+<hr>
+<p>版权声明：本文为CSDN博主「亲亲Friends」的原创文章</p>
+<ol>
+<li>在C++下，若要使用C中已有库中的函数如stdio，文件包含方式为前面加一个c，同时去掉.h后缀，如#include &lt; cstdio &gt;，同时必须加上using namaspace;对于其他类似的函数同样</li>
+<li>对于C++特有的库，直接用去掉.h后缀的文件包含，并加上using namaspace</li>
+</ol>
+<p>&quot;.h&quot;头文件将所有名字放在global namespace中，在新的方式下（指的是诸如cstdio这样的头文件），名字是放在namespace <strong>std中的。因此，新的方式是所有应用推荐的方式，除非是要编写与C严格兼容的程序</strong></p>
+<h2 id="standard-template-library-stl">Standard Template Library-STL</h2>
+<p>标准模板库（Standard Template Library，STL）是惠普实验室开发的一系列软件的统称。STL的代码从广义上讲分为三类：algorithm（算法）、container（容器）和iterator（<a href="https://baike.baidu.com/item/%E8%BF%AD%E4%BB%A3%E5%99%A8/3803342">迭代器</a>）；在C++标准中，STL被组织为下面的<strong>13个头文件</strong>：<algorithm>、<deque>、<functional>、<iterator>、<vector>、<list>、<map>、<memory>、<numeric>、<queue>、<set>、<stack>和<utility>。</p>
+<p>C++ 对模板（Template）支持得很好，STL 就是借助模板把常用的数据结构及其算法都实现了一遍，并且做到了<strong>数据结构和算法的分离</strong>。STL封装了很多实用的容器，省时省力，能够让你将更多心思放到解决问题的步骤上，而非费力去实现数据结构诸多细节上，<strong>像极了用python时候的酣畅淋漓</strong>。</p>
+<p>P.S. 如果你对STL源码颇有兴趣，那你不妨拜读C++大师<a href="https://link.zhihu.com/?target=https%3A//baike.baidu.com/item/%E4%BE%AF%E6%8D%B7/1760197%3Ffr%3Daladdin">侯捷</a>的杰作《<strong>STL源码剖析</strong>》。</p>
+<p>STL是提高C++编写效率的一个利器.</p>
+<h3 id="stl六大部件">STL六大部件</h3>
+<ul>
+<li>容器（Containers）</li>
+<li>分配器（Allocators）</li>
+<li>算法（Algorithm）</li>
+<li>迭代器（Iterators）</li>
+<li>适配器（Adapters）</li>
+<li>仿函数（Functors）</li>
+</ul>
+<h3 id="vector">vector</h3>
+<p>#include &lt; vector &gt;</p>
+<p>vector是变长数组，支持随机访问，不支持在任意位置O(1)插入。为了保证效率，元素的增删一般应该在<strong>末尾</strong>进行。</p>
+<p>声明:</p>
+<pre><code>   \#include &lt; vector &gt;    头文件 //引用vector是必须在头文件添加的
+
+   vector&lt; int &gt; a;       相当于一个长度动态变化的int数组 //初始化动态数组
+
+   vector&lt; int &gt; b[233];   相当于第一维长233，第二维长度动态变化的int数组
+
+   struct rec{…};
+
+   vector&lt; rec &gt; c;       自定义的结构体类型也可以保存在vector中 //结构体数组
+</code></pre>
+<h4 id="sizeempty">size/empty</h4>
+<p>size函数返回vector的<strong>实际长度</strong>（包含的元素个数），empty函数返回一个bool类型，表明vector是否为空。二者的时间复杂度都是<strong>O(1)</strong>。</p>
+<p>-&gt; 所有的STL容器都支持这两个方法，含义也相同，之后我们就不再重复给出。</p>
+<h4 id="lear">lear</h4>
+<p>clear函数把vector清空。</p>
+<h4 id="迭代器">迭代器</h4>
+<p>迭代器就像STL容器的“<strong>指针</strong>”，可以用星号“*”操作符解除引用。</p>
+<p>一个保存int的vector的迭代器声明方法为：</p>
+<p>vector&lt; int &gt;::iterator it;</p>
+<p>vector&lt; int &gt;::iterator是迭代器引用，it是迭代器的命名。</p>
+<p>vector的迭代器是“随机访问迭代器”，可以把vector的迭代器与一个整数相加减，其行为和指针的移动类似。可以把vector的两个迭代器相减，其结果也和指针相减类似，得到两个迭代器对应下标之间的距离。</p>
+<h4 id="beginend">begin/end</h4>
+<p>begin函数返回指向vector中<strong>第一个元素</strong>的迭代器。例如a是一个非空的vector，则***a.begin()<strong>与</strong>a[0]**的作用相同。</p>
+<p>所有的容器都可以视作一个“<strong>前闭后开</strong>”的结构，end函数返回vector的尾部，即第n个元素再往后的“边界”。*a.end()与a[n]都是越界访问，其中n=a.size()。</p>
+<h4 id="frontback">front/back</h4>
+<p>front函数返回vector的<strong>第一个元素</strong>，等价于*a.begin() 和 a[0]。</p>
+<p>back函数返回vector的<strong>最后一个元素</strong>，等价于*==a.end() 和 <strong>a[a.size() – 1]</strong>。</p>
+<h4 id="push_back-and-pop_back">push_back() and pop_back()</h4>
+<p>a.push_back(x) 把元素x<strong>插入</strong>到vector a的<strong>尾部</strong>。</p>
+<p>b.pop_back() <strong>删除</strong>vector a的<strong>最后一个元素</strong>。</p>
+<h3 id="queue">queue</h3>
+<p>#include &lt; queue &gt;</p>
+<p>头文件queue主要包括循环队列queue和优先队列priority_queue两个容器。</p>
+<p>声明</p>
+<pre><code>   queue&lt; int &gt; q;
+
+   struct rec{…}; queue&lt; rec &gt; q;    //结构体rec中必须定义小于号
+
+   priority_queue&lt; int &gt; q;    // 大根堆
+
+   priority_queue&lt;int, vector&lt; int &gt;, greater&lt; int &gt; q;   // 小根堆
+
+   priority_queue&lt;pair&lt;int, int&gt;&gt;q;
+</code></pre>
+<h4 id="循环队列-queue">循环队列 queue</h4>
+<h5 id="push">push</h5>
+<p>从队尾插入</p>
+<h5 id="pop">pop</h5>
+<p>从队头弹出</p>
+<h5 id="front">front</h5>
+<p>返回队头元素</p>
+<h5 id="back">back</h5>
+<p>返回队尾元素</p>
+<h4 id="优先队列-priority_queue">优先队列 priority_queue</h4>
+<h5 id="push-2">push</h5>
+<p>把元素插入堆</p>
+<h5 id="pop-2">pop</h5>
+<p>删除堆顶元素</p>
+<h5 id="top">top</h5>
+<p>查询堆顶元素（最大值）</p>
+<h3 id="stack">stack</h3>
+<p>#include &lt; stack &gt;</p>
+<p>头文件stack包含栈。</p>
+<p>声明</p>
+<pre><code>   stack&lt; int &gt; st;
+</code></pre>
+<h4 id="push-3">push</h4>
+<p>向栈顶插入</p>
+<h4 id="pop-3">pop</h4>
+<p>弹出栈顶元素</p>
+<h3 id="deque">deque</h3>
+<p>#include &lt; deque &gt;</p>
+<p>双端队列deque是一个支持在<strong>两端</strong>高效插入或删除元素的连续线性存储空间。它就像是vector和queue的结合。与vector相比，deque在头部增删元素仅需要O(1)的时间；与queue相比，deque像数组一样支持随机访问。</p>
+<h4 id="beginend-2">begin/end</h4>
+<p>返回deque的头/尾迭代器</p>
+<h4 id="frontback-2">front/back</h4>
+<p>队头/队尾元素</p>
+<h4 id="push_back">push_back</h4>
+<p>从队尾入队</p>
+<h4 id="push_front">push_front</h4>
+<p>从队头入队</p>
+<h4 id="pop_back">pop_back</h4>
+<p>从队尾出队</p>
+<h4 id="pop_front">pop_front</h4>
+<p>从队头出队</p>
+<h4 id="clear">clear</h4>
+<p>清空队列</p>
+<h3 id="set">set</h3>
+<p>#include &lt; set &gt;</p>
+<p>头文件set主要包括set和multiset两个容器，分别是“<strong>有序集合</strong>”和“有序多重集合”，即前者的元素不能重复，而后者可以包含若干个相等的元素。set和multiset的内部实现是一棵红黑树，它们支持的函数基本相同。</p>
+<p>声明</p>
+<pre><code>set&lt; int &gt; s;
+
+struct rec{…}; set&lt; rec &gt; s;   // 结构体rec中必须定义小于号
+
+multiset&lt; double &gt; s;
+</code></pre>
+<h4 id="sizeemptyclear">size/empty/clear</h4>
+<pre><code>与vector类似
+</code></pre>
+<h4 id="迭代器-2">迭代器</h4>
+<p>set和multiset的迭代器称为“双向访问迭代器”，不支持“随机访问”，支持星号(*)解除引用，仅支持“++”和“—–”两个与算术相关的操作。</p>
+<p>设it是一个迭代器，例如set&lt; int &gt;::iterator it;</p>
+<p>若把it++，则it会指向“下一个”元素。这里的“下一个”元素是指在元素从小到大排序的结果中，排在it下一名的元素。同理，若把it--，则it将会指向排在“上一个”的元素。</p>
+<h4 id="beginend-3">begin/end</h4>
+<p>返回集合的首、尾迭代器，时间复杂度均为O(1)。</p>
+<p>s.begin() 是指向集合中最小元素的迭代器。</p>
+<p>s.end() 是指向集合中最大元素的下一个位置的迭代器。换言之，就像vector一样，是一个“前闭后开”的形式。因此--s.end()是指向集合中最大元素的迭代器。</p>
+<h4 id="insert">insert</h4>
+<p>s.insert(x)把一个元素x插入到集合s中，时间复杂度为O(logn)。</p>
+<p>在set中，若元素已存在，则不会重复插入该元素，对集合的状态无影响。</p>
+<h4 id="find">find</h4>
+<p>s.find(x) 在集合s中查找等于x的元素，并返回指向该元素的迭代器。若不存在，则返回s.end()。时间复杂度为O(logn)。</p>
+<h4 id="lower_boundupper_bound">lower_bound/upper_bound</h4>
+<p>这两个函数的用法与find类似，但查找的条件略有不同，时间复杂度为 O(logn)。</p>
+<p>s.lower_bound(x) <strong>查找大于等于x的元素中最小的一个</strong>，并返回指向该元素的迭代器。</p>
+<p>s.upper_bound(x) <strong>查找大于x的元素中最小的一个</strong>，并返回指向该元素的迭代器。</p>
+<h4 id="erase">erase</h4>
+<p>设it是一个迭代器，s.erase(it) 从s中删除迭代器it指向的元素，时间复杂度为O(logn)</p>
+<p>设x是一个元素，s.erase(x) 从s中删除所有等于x的元素，时间复杂度为O(k+logn)，其中k是被删除的元素个数。</p>
+<h4 id="count">count</h4>
+<p>s.count(x) 返回集合s中等于x的元素个数，时间复杂度为 O(k +logn)，其中k为元素x的个数。</p>
+<h3 id="map">map</h3>
+<p>#include &lt; map &gt;</p>
+<p>map容器是一个键值对key-value的映射，其内部实现是一棵以key为关键码的红黑树。Map的key和value可以是任意类型，其中key必须定义小于号运算符。类比Python中的字典</p>
+<p>声明</p>
+<pre><code>   map&lt;key_type, value_type&gt; name;
+
+   例如：
+
+   map&lt;long, long, bool&gt; vis;
+
+   -&gt;map&lt;string, int&gt; hash;//哈希结构重点理解，熟练运用
+
+   map&lt;pair&lt;int, int&gt;, vector&lt;int&gt;&gt; test;
+</code></pre>
+<h4 id="sizeemptyclearbeginend">size/empty/clear/begin/end</h4>
+<p>均与set类似</p>
+<h4 id="inserterase">insert/erase</h4>
+<p>与set类似，但其参数均是pair&lt;key_type, value_type&gt;</p>
+<h4 id="find-2">find</h4>
+<p>h.find(x) 在变量名为h的map中查找key为x的二元组。</p>
+<h4 id="操作符">[]操作符</h4>
+<p>hash[key] 返回key映射的value的引用，时间复杂度为O(logn)。</p>
+<p>[]操作符是map最吸引人的地方。我们可以很方便地通过hash[key]来得到key对应的value，还可以对h[key]进行赋值操作，改变key对应的value。</p>
+<h2 id="常用库函数">常用库函数</h2>
+<h3 id="常用库函数-2">常用库函数</h3>
+<p>万能头文件 #include&lt;bits/stdc++.h&gt;</p>
+<p>#include&lt; algorithm &gt;</p>
+<h4 id="reverse-翻转">reverse 翻转</h4>
+<p>翻转一个vector：</p>
+<p>reverse(a.begin(), a.end());</p>
+<p>翻转一个数组，元素存放在下标1~n：</p>
+<p>reverse(a + 1, a + 1 + n);</p>
+<h4 id="unique-去重">unique 去重</h4>
+<p>返回去重之后的尾迭代器（或指针），仍然为前闭后开，即这个迭代器是去重之后末尾元素的下一个位置。该函数常用于离散化，利用迭代器（或指针）的减法，可计算出去重后的元素个数。</p>
+<p>把一个vector去重：</p>
+<p>int m = unique(a.begin(), a.end()) – a.begin();</p>
+<p>把一个数组去重，元素存放在下标1~n：</p>
+<p>int m = unique(a + 1, a + 1 + n) – (a + 1);</p>
+<h4 id="random_shuffle-随机打乱">random_shuffle 随机打乱</h4>
+<p>用法与reverse相同</p>
+<h4 id="sort">sort</h4>
+<p>对两个迭代器（或指针）指定的部分进行快速排序。可以在第三个参数传入定义大小比较的函数，或者重载“小于号”运算符。</p>
+<p>把一个int数组（元素存放在下标1~n）从大到小排序，传入比较函数：</p>
+<p>int a[MAX_SIZE];</p>
+<p>bool cmp(int a, int b) {return a &gt; b; }</p>
+<p>sort(a + 1, a + 1 + n, cmp);</p>
+<p>把自定义的结构体vector排序，重载“小于号”运算符：</p>
+<p>struct rec{ int id, x, y; }</p>
+<p>vector&lt; rec &gt; a;</p>
+<p>bool operator &lt;(const rec &amp;a, const rec &amp;b) {</p>
+<pre><code>return a.x &lt; b.x || a.x == b.x &amp;&amp; a.y &lt; b.y;
+</code></pre>
+<p>}</p>
+<p>sort(a.begin(), a.end());</p>
+<h4 id="lower_boundupper_bound-二分">lower_bound/upper_bound 二分</h4>
+<p>lower_bound 的第三个参数传入一个元素x，在两个迭代器（指针）指定的部分上执行二分查找，返回指向第一个大于等于x的元素的位置的迭代器（指针）。</p>
+<p>upper_bound 的用法和lower_bound大致相同，唯一的区别是查找第一个大于x的元素。当然，两个迭代器（指针）指定的部分应该是提前排好序的。</p>
+<p>在有序int数组（元素存放在下标1~n）中查找大于等于x的最小整数的下标：</p>
+<p>int I = lower_bound(a + 1, a + 1 + n,x) – a;</p>
+<p>在有序vector&lt; int &gt; 中查找小于等于x的最大整数（假设一定存在）：</p>
+<p>int y = *--upper_bound(a.begin(), a.end(), x);</p>
+<h3 id="string函数">string函数</h3>
+<h4 id="string的构造函数的形式">string的构造函数的形式</h4>
+<p>#include<string>引入第三方库，库中常用的方法：</p>
+<p>string str：生成空字符串</p>
+<p>string s(str)：生成字符串为str的复制品</p>
+<p>string s(str, strbegin,strlen)：将字符串str中从下标strbegin开始、长度为strlen的部分作为字符串初值</p>
+<p>string s(cstr, char_len)：以C_string类型cstr的前char_len个字符串作为字符串s的初值</p>
+<p>string s(num ,c)：生成num个c字符的字符串</p>
+<p>string s(str, stridx)：将字符串str中从下标stridx开始到字符串结束的位置作为字符串初值</p>
+<h4 id="string的大小和容量">string的大小和容量：</h4>
+<ol>
+<li>
+<p>**size()**和length()：返回string对象的字符个数，他们执行效果相同。</p>
+</li>
+<li>
+<p>max_size()：返回string对象最多包含的字符数，超出会抛出length_error异常</p>
+</li>
+<li>
+<p>capacity()：重新分配内存之前，string对象能包含的最大字符数</p>
+</li>
+</ol>
+<h4 id="string的字符串比较">string的字符串比较：</h4>
+<p>C ++字符串支持常见的比较操作符（&gt;,&gt;=,&lt;,&lt;=,==,!=），甚至支持string与C-string的比较。在使用&gt;,&gt;=,&lt;,&lt;=这些操作符的时候，根据“<strong>当前字符特性</strong>”将字符按<strong>字典顺序</strong>进行逐一得 比较。字典排序靠前的字符小，比较的顺序是从前向后比较，遇到不相等的字符就按这个位置上的两个字符的比较结果确定两个字符串的大小(前面减后面)。</p>
+<p>另一个功能强大的比较函数是成员函数<strong>compare()</strong>。他支持多参数处理，支持用<strong>索引值</strong>和<strong>长度</strong>定位子串来进行比较。   他返回一个整数来表示比较结果，返回值意义如下：<strong>0：相等 1：大于 -1：小于</strong></p>
+<h4 id="string的插入push_back-和-insert">string的插入：push_back() 和 insert()</h4>
+<p>push_back(‘插入的字符’)是尾插入法</p>
+<p>insert(s.begin(),‘插入的字符’)是特殊位置的插入法</p>
+<pre><code class="language-c">	// 方法一：append()
+    string s1(&quot;abc&quot;);
+    s1.append(&quot;def&quot;);
+    cout&lt;&lt;&quot;s1:&quot;&lt;&lt;s1&lt;&lt;endl; // s1:abcdef
+	// 方法二：+ 操作符
+    string s2 = &quot;abc&quot;;
+    /*s2 += &quot;def&quot;;*/
+    string s3 = &quot;def&quot;;
+    s2 += s3.c_str();
+</code></pre>
+<h4 id="string的遍历借助迭代器-或者-下标法">string的遍历：借助迭代器 或者 下标法</h4>
+<pre><code class="language-c">// 方法一： 下标法
+
+    for( int i = 0; i &lt; s1.size() ; i++ )
+    {
+        cout&lt;&lt;s1[i];
+    }
+    cout&lt;&lt;endl;
+
+    // 方法二：正向迭代器
+
+    string::iterator iter = s1.begin();
+    for( ; iter &lt; s1.end() ; iter++)
+    {
+        cout&lt;&lt;*iter;
+    }
+    cout&lt;&lt;endl;
+
+    // 方法三：反向迭代器
+    string::reverse_iterator riter = s1.rbegin();
+    for( ; riter &lt; s1.rend() ; riter++)
+    {
+        cout&lt;&lt;*riter;
+    }
+    cout&lt;&lt;endl;
+</code></pre>
+<h4 id="string的删除erase">string的删除：erase()</h4>
+<ol>
+<li>
+<p>iterator erase(iterator p);//删除字符串中p所指的字符</p>
+</li>
+<li>
+<p>iterator erase(iterator first, iterator last)<em>;//删除字符串中迭代器</em> 区间[first,last)上所有字符</p>
+</li>
+</ol>
+<h4 id="string的字符替换">string的字符替换：</h4>
+<ol>
+<li>
+<p>string&amp; replace(size_t pos, size_t n, const char *s);//将当前字符串从pos索引开始的n个字符，替换成字符串s</p>
+</li>
+<li>
+<p>string&amp; replace(size_t pos, size_t n, size_t n1, char c); //将当前字符串从pos索引开始的n个字符，替换成n1个字符c</p>
+</li>
+<li>
+<p>string&amp; replace(iterator i1, iterator i2, const char* s);//将当前字符串[i1,i2)区间中的字符串替换为字符串s</p>
+</li>
+</ol>
+<h4 id="string的大小写转换tolower和toupper函数-或者-stl中的transform算法">string的大小写转换：tolower()和toupper()函数 或者 STL中的transform算法</h4>
+<h4 id="string的查找find">string的查找：find</h4>
+<pre><code class="language-c">string s(&quot;I like C++ and Python.&quot;);
+// 1. 查找一个字符串
+cout &lt;&lt; s.find(&quot;chicken&quot;) &lt;&lt; endl;        // 结果是：9
+// 2. 从下标为6开始找字符'i'，返回找到的第一个i的下标
+cout &lt;&lt; s.find('i',6) &lt;&lt; endl;            // 结果是：11
+// 3. 从字符串的末尾开始查找字符串，返回的还是首字母在字符串中的下标
+cout &lt;&lt; s.rfind(&quot;chicken&quot;) &lt;&lt; endl;       // 结果是：9
+// 4. 从字符串的末尾开始查找字符
+cout &lt;&lt; s.rfind('i') &lt;&lt; endl;             // 结果是：18--因为是从末尾开始查找，所以返回第一次找到的字符
+</code></pre>
+<h4 id="string的排序sortsbegin-send">string的排序：sort(s.begin( ),s.end( ))</h4>
+<p>string s = &quot;cdefba&quot;;</p>
+<p>sort(s.begin(),s.end());</p>
+<h4 id="string的分割截取字符串strtok-substr">string的分割/截取字符串：strtok() &amp; substr()</h4>
+<pre><code class="language-c">string s1(&quot;0123456789&quot;);
+string s2 = s1.substr(2,5); // 结果：23456-----参数5表示：截取的字符串的长度
+-------------------
+char str[] = &quot;I,am,a,student; hello world!&quot;;
+
+const char *split = &quot;,; !&quot;;
+char *p2 = strtok(str,split);
+while( p2 != NULL )
+{
+  cout&lt;&lt;p2&lt;&lt;endl;
+  p2 = strtok(NULL,split);
+}
+</code></pre>
+<h3 id="c语言中的字符串处理函数">C语言中的字符串处理函数</h3>
+<h4 id="strlen">strlen</h4>
+<p>函数功能：计算字符串str1的长度<br>
+返回值：一个int值<br>
+注意：字符串的长度不包括字符’\0’</p>
+<pre><code class="language-c">char str1[20] = &quot;We are csdn!&quot;;
+int size = strlen(str1);
+printf(&quot;%d\n&quot;, size);  //size = 12
+</code></pre>
+<h4 id="strcpy">strcpy</h4>
+<p>函数功能：将字符串str2复制到字符串str1中，并覆盖str1原始字符串，可以用来为字符串变量赋值<br>
+返回值：str1<br>
+注意：1）字符串str2会覆盖str1中的全部字符，2）字符串str2的长度不能超过str1</p>
+<pre><code class="language-c">char str1[] = &quot;We are Chinese!&quot;;
+char str2[] = &quot;Hello!&quot;;
+strcpy_s(str1, str2); //str = Hello!
+</code></pre>
+<h4 id="strcat">strcat</h4>
+<p>原型：strcat(str1,str2);<br>
+功能：将字符串str2添加到字符串str1的尾部，也就是拼接两个字符串</p>
+<p>原型2：strncat(str1,str2,n);<br>
+功能2：将字符串str2的前n个字符添加到字符串str1的尾部</p>
+<pre><code class="language-c">char str1[20] = &quot;We are csdn!&quot;;
+char str2[] = &quot;Hello!&quot;;
+strcat_s(str1, str2);
+printf(&quot;str1 = %s\n&quot;, str1);  //str1 = We are csdn!Hello!
+</code></pre>
+<h4 id="strcmp">strcmp</h4>
+<p>原型：strcmp(str1,str2);<br>
+功能：比较两个字符串，如果两个字符串相等，则返回0；<br>
+若str1大于str2（对于大于的理解，是指从两个字符串的第一个字符开始比较，若两个字符相同，则继续比较，若发现两个字符不相等，且str1中该字符的ASCII码大于str2中的，则表示str1大于str2），返回一个正数（这个正数不一定是1）；<br>
+若str1小于str2，返回一个负数（不一定是-1）；若字符串str1的长度大于str2，且str2的字符与str1前面的字符相同，则也相对于str1大于str2处理</p>
+<p>原型2：strncmp(str1,str2,n);<br>
+功能2：<strong>比较两个字符串的前n个字符</strong></p>
+<pre><code class="language-c">char str1[] = &quot;Wearecsdn!&quot;;
+char str2[] = &quot;Wearecsdn!&quot;;
+char str3[] = &quot;Wearea!&quot;;
+char str4[] = &quot;Wearef!&quot;;
+int cmp1 = strcmp(str1, str2);        //cmp1=0
+int cmp2 = strcmp(str1, str3);        //cmp2=1
+int cmp5 = strncmp(str1, str2, 5);    //cmp5=0
+int cmp6 = strncmp(str1, str3, 5);    //cmp6=0
+</code></pre>
+<h2 id="程序中的科学计数法">程序中的科学计数法</h2>
+<p>今天学c看到<code>const int a=1e6+10</code>不是很理解,原来是科学计数法的表示形式。</p>
+<p><code>const int a=1e6+10</code>=1000010；<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mo>∗</mo><mn>1</mn><msup><mn>0</mn><mn>6</mn></msup><mo>+</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">1*10^6+10</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">6</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">0</span></span></span></span></p>
+<p><code>6.555e6+10</code>=6555010；<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>6.555</mn><mo>∗</mo><mn>1</mn><msup><mn>0</mn><mn>6</mn></msup><mo>+</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">6.555*10^6+10</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">6</span><span class="mord">.</span><span class="mord">5</span><span class="mord">5</span><span class="mord">5</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">6</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">0</span></span></span></span></p>
+<h2 id="面向对象">面向对象</h2>
+<h2 id="vs-code-基本配置">VS Code 基本配置</h2>
+<h3 id="编译cc程序">编译C/C++程序</h3>
+<p>首先在自己的电脑上配置MinGw64，之后将其添加到环境变量当中去。</p>
+<p>之后新建一个文件夹，注意要用英文命名，通过vs code打开。</p>
+<p>最后写一段程序，在运行选项栏里选择以非调试模式运行，生成.vs code文件夹，里面包含了launch.json和tasks.json文件。</p>
+<p>launch.json文件的配置：</p>
+<pre><code class="language-json">{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    &quot;version&quot;: &quot;0.2.0&quot;,
+    &quot;configurations&quot;: [
+        {
+            &quot;name&quot;: &quot;g++.exe - 生成和调试活动文件&quot;,
+            &quot;type&quot;: &quot;cppdbg&quot;,
+            &quot;request&quot;: &quot;launch&quot;,
+            &quot;program&quot;: &quot;${fileDirname}\\exe\\${fileBasenameNoExtension}.exe&quot;,
+            &quot;args&quot;: [],
+            &quot;stopAtEntry&quot;: false,
+            &quot;cwd&quot;: &quot;${fileDirname}&quot;,
+            &quot;environment&quot;: [],
+            &quot;externalConsole&quot;: true,
+            &quot;MIMode&quot;: &quot;gdb&quot;,
+            &quot;miDebuggerPath&quot;: &quot;E:\\mingw64\\bin\\gdb.exe&quot;,
+            &quot;setupCommands&quot;: [
+                {
+                    &quot;description&quot;: &quot;为 gdb 启用整齐打印&quot;,
+                    &quot;text&quot;: &quot;-enable-pretty-printing&quot;,
+                    &quot;ignoreFailures&quot;: true
+                },
+                {
+                    &quot;description&quot;: &quot;将反汇编风格设置为 Intel&quot;,
+                    &quot;text&quot;: &quot;-gdb-set disassembly-flavor intel&quot;,
+                    &quot;ignoreFailures&quot;: true
+                }
+            ],
+            &quot;preLaunchTask&quot;: &quot;C/C++: g++.exe 生成活动文件&quot;
+        }
+    ]
+}
+</code></pre>
+<p>tasks.json文件的配置：</p>
+<pre><code class="language-json">{
+    &quot;tasks&quot;: [
+        {
+            &quot;type&quot;: &quot;cppbuild&quot;,
+            &quot;label&quot;: &quot;C/C++: g++.exe 生成活动文件&quot;,
+            &quot;command&quot;: &quot;E:\\mingw64\\bin\\g++.exe&quot;,
+            &quot;args&quot;: [
+                &quot;-fdiagnostics-color=always&quot;,
+                &quot;-g&quot;,
+                &quot;${file}&quot;,
+                &quot;-o&quot;,
+                &quot;${fileDirname}\\exe\\${fileBasenameNoExtension}.exe&quot;,
+                &quot;-fexec-charset=GBK&quot;
+            ],
+            &quot;options&quot;: {
+                &quot;cwd&quot;: &quot;${fileDirname}&quot;
+            },
+            &quot;problemMatcher&quot;: [
+                &quot;$gcc&quot;
+            ],
+            &quot;group&quot;: {
+                &quot;kind&quot;: &quot;build&quot;,
+                &quot;isDefault&quot;: true
+            },
+            &quot;detail&quot;: &quot;调试器生成的任务。&quot;
+        }
+    ],
+    &quot;version&quot;: &quot;2.0.0&quot;
+}
+</code></pre>
+<h3 id="常见错误">常见错误</h3>
+<p><code>undefined reference to 'WinMain'	collect2.exe: error: ld returned 1 exit status</code></p>
+<p>解决办法：没有在c/cpp文件中写出main函数,而且<strong>main</strong>别写错！！</p>
+<h3 id="编译python程序-jupyter-lab">编译Python程序-jupyter lab</h3>
+<h2 id="经典概念辨析">经典概念辨析</h2>
+<p>编译器是对代码进行编译，转换为包含在目标文件中的机器语言版本(字节码)，生成扩展名为.o/.obj的目标文件；解释器是</p>
+<h3 id="标识符和关键字">标识符和关键字</h3>
+<p>标识符：编写程序时使用字符集中的字符组合成一系列“<strong>单词</strong>”代表变量、常量、函数等。用于声明的这些“单词”称为标识符。</p>
+<p>用户自定义的标识符：由程序员定义说明的标识符，包括程序中使用的变量名、符号常量名、函数名、结构体类型名、共用体类型名等。</p>
+<p>自定义标识符的定义遵循规则：</p>
+<ol>
+<li>只由英文、数字、或 _（下划线） 组成</li>
+<li>第一个字符只能是英文字母或下划线，不能是数字</li>
+<li>大小写英文字母代表不同的字符</li>
+<li>不能是C/C++语言的关键字</li>
+</ol>
+<p>关键字：系统预定说明的标识符称为关键字</p>
+<p>1.数据类型关键字<br>
+char、int、short、long、float、double、signed、unsigned、struct、union、enum、void<br>
+2.存储类型关键字<br>
+auto、register、static、extern<br>
+3.流程控制关键字<br>
+if、else、switch、default、case、while、do、for、break、continue、return、goto<br>
+4.其他关键字<br>
+sizeof、typedef、const、volatile</p>
+<p>正确标识符命名：  smart  _decision  high3  Area</p>
+<p>不正确标识符命名：5smart(以数字开头)<br>
+Bomb?(含有特殊字符？)<br>
+High.balance(把下划线“_”与“.”混淆)<br>
+float（不能用C语言中的关键字）</p>
+<h3 id="变量的声明和定义">变量的声明和定义</h3>
+<p>声明的两种方式：</p>
+<p>一种是需要建立存储空间的：</p>
+<p>例如：int a ;在声明的时候就已经建立了存储空间。这种声明是”定义性声明(defining declaration)”，即我们平时所说的“定义”。</p>
+<p>另一种是不需要建立存储空间的：</p>
+<p>只是告诉编译器某变量已经在别处定义过了。例如：extern int a。其中，变量a是在别处定义的。这种声明是”引用性声明(referncing declaration)”，即我们平时所说的“声明”。</p>
+<p>例子：</p>
+<p>int a; //定义性声明，分配存储空间，初值不确定</p>
+<p>int b = 0; //定义性声明，分配存储空间，赋初值</p>
+<p>extern int c; //引用性声明，不分配存储空间，只是告诉编译器这个变量已经在别处定义过了</p>
+<h3 id="函数的声明和定义">函数的声明和定义</h3>
+<p>函数的定义和声明也是一样，定义需要分配存储空间；声明只是告诉编译器这个函数已经在别处定义过了。函数的定义和声明比较好区分。有函数体的即为定义，不带函数体即为声明。</p>
+<pre><code class="language-c">//声明
+double sqrt(double x);
+
+
+//定义
+double sqrt(double x)
+
+{
+
+    return x*x;
+
+}
+</code></pre>
+<h1 id="c零基础入门99题夜深人静写算法">c++零基础入门99题——夜深人静写算法</h1>
+<p>1.函数2235</p>
+<p>给你两个整数 <code>num1</code> 和 <code>num2</code>，返回这两个整数的和。</p>
+<pre><code class="language-c++">class Solution {
+public:
+    int sum(int num1, int num2) {
+        return num1 + num2;
+        
+    }
+};
+</code></pre>
+<p>2.库函数69</p>
+<p>给你一个非负整数 x ，计算并返回 x 的 算术平方根 。</p>
+<p>由于返回类型是整数，结果只保留 整数部分 ，小数部分将被 舍去 。</p>
+<p>注意：不允许使用任何内置指数函数和算符，例如 pow(x, 0.5) 或者 x ** 0.5 。</p>
+<pre><code class="language-c++">class Solution {
+public:
+    int mySqrt(int x) {
+        //库函数的使用
+        return (int)sqrt(x);
+
+    }
+};
+</code></pre>
+<h2 id="729-730错误总结与复盘强基计划">7.29-7.30错误总结与复盘（强基计划）</h2>
+<p>1.数组的二维遍历初始值的设定(2006)</p>
+<pre><code class="language-c++">for(int i = 0;i &lt; nums.size();i++){
+    for(int j = i;j &lt; nums.size();j++){
+        .......;
+    }
+}
+</code></pre>
+<p>2.冒泡排序</p>
+<pre><code class="language-c++">int temp;
+for(int i = 0;i &lt; nums.size();i++){
+    for(int j = 0;j &lt; nums.size();j++){
+        if(nums[j] &gt; nums[j+1]){
+            temp = nums[j];
+            nums[j+1] = nums[j];
+            nums[j] = nums[j+1];
+        }
+    }
+}
+</code></pre>
+<p>3.sum的位置(1672)</p>
+<pre><code class="language-c++">class Solution {
+public:
+    int maximumWealth(vector&lt;vector&lt;int&gt;&gt;&amp; accounts) {
+        int maxv = 0;
+        //一个是放在这里
+        //int sum = 0;
+        for(int i =0;i &lt; accounts.size();i++){
+            //一个是放在这里
+            int sum = 0;
+            for(int j = 0;j &lt; accounts[i].size();j++){
+                sum += accounts[i][j];
+            }
+            maxv = max(maxv,sum);
+        }
+        return maxv;
+    }
+};
+放在初始求得是全部数组中每行的和；放在后面求的是二维数组中单独行的和。
+</code></pre>
+<p>4.二分查找应用条件是——<strong>有序数组</strong></p>
+<p>结合矩阵中元素的搜索</p>
+<pre><code class="language-c++">
+</code></pre>
+<ol start="5">
+<li>/2和&gt;&gt;1的区别：（c++)</li>
+</ol>
+<blockquote>
+<p>1.操作对象类型不同是右移符百号，它在操度作时只允许整数<br>
+/是除法，它可以操作不同类型的数据：浮点数除法最终结果是浮点数，整数除法的最终结果是整数。<br>
+只有当被操作数数据类型为知大于0的整数时，运算道结果才是内相同的。<br>
+2.运算效率不同<br>
+右移操作通常情况下，会比整数除法速度快。涉及容到浮点数的除法速度是最慢的。<br>
+3.优先级不同<br>
+右移运算的优先级比除法低，在同时参与的运算中，先计算乘除，后计算左移或右移</p>
+</blockquote>
+<h2 id="8月-10错误总结与复盘强基计划">8月-10错误总结与复盘（强基计划）</h2>
+<p>加深对递归函数调用的过程理解与实战书写；只有过程清晰了，才能跟高的运用递归函数去提高效率。</p>
+<p>scanf与scanf_s安全性问题：</p>
+<p>#define _CRT_SECURE_NO_WARNINGS-&gt;解除安全隐患</p>
+<p>同样gets也不再支持而改用<strong>gets_s</strong></p>
+<pre><code class="language-c">#include&lt;stdio.h&gt;
+//进程数量-&gt;题目中是五个
+void process(){
+}
+void cpu(){
+    process();
+    func1();
+    func2();
+    func3();
+    func4();
+    func5();
+    
+}
+void func1(){
+    //x=操作的实现
+}
+void func2(){
+    //x++操作的实现
+}
+void func3(){
+    //x--操作的实现
+}
+void func4(){
+    //！？？操作的实现
+}
+void func5(){
+    //操作的实现
+}
+
+int main(){
+    cpu();
+}
+</code></pre>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7">运算符优先级</a></li>
+<li><a href="#different-from-stdioh-and-standardio"><strong>Different from stdio.h and standard.io</strong></a></li>
+<li><a href="#introduction">Introduction</a>
+<ul>
+<li><a href="#stdioh">stdio.h</a></li>
+<li><a href="#code-process">Code process</a></li>
+<li><a href="#scanf"><strong>scanf</strong></a></li>
+</ul>
+</li>
+<li><a href="#lexical-elements-and-data-types">Lexical Elements and Data Types</a>
+<ul>
+<li><a href="#character-sets-and-tokens">Character sets and tokens</a></li>
+<li><a href="#comments">Comments</a></li>
+<li><a href="#keywords">keywords</a></li>
+<li><a href="#identifiers">identifiers</a></li>
+<li><a href="#expression">expression</a></li>
+<li><a href="#list-of-escape-sequences-in-c">List of Escape Sequences in C</a></li>
+<li><a href="#int-types">int types</a></li>
+</ul>
+</li>
+<li><a href="#flow-of-control-and-simple-functions">Flow of control and simple functions</a>
+<ul>
+<li><a href="#the-conditional-statement-if-and-if-else">The conditional statement if and if-else</a></li>
+<li><a href="#the-iterative-statement-while">The iterative statement while</a></li>
+<li><a href="#the-for-statement-and-its-while-analog">The for statement and its while analog</a></li>
+<li><a href="#oddball-operators-conditional-and-comma">oddball operators-conditional and comma</a></li>
+<li><a href="#break-and-continue-and-switch">Break and continue and switch</a></li>
+</ul>
+</li>
+<li><a href="#functions-recursion-arrays-and-pointers">functions, recursion, arrays, and pointers</a>
+<ul>
+<li><a href="#types-of-functions">types of functions</a></li>
+<li><a href="#return">return</a></li>
+</ul>
+</li>
+<li><a href="#storage-class">Storage class</a>
+<ul>
+<li><a href="#recursion-%E9%80%92%E5%BD%92">recursion-&gt;递归</a></li>
+</ul>
+</li>
+<li><a href="#pointers-and-arrays">Pointers and  Arrays</a>
+<ul>
+<li><a href="#array">array</a></li>
+<li><a href="#pointers-%E4%BC%A0%E8%AF%B4%E4%B8%AD%E7%9A%84%E6%8C%87%E9%92%88">pointers-传说中的指针</a></li>
+<li><a href="#%E5%87%BD%E6%95%B0%E5%80%BC%E4%BC%A0%E9%80%92vs%E5%BC%95%E7%94%A8%E4%BC%A0%E9%80%92">函数	值传递VS引用传递</a>
+<ul>
+<li><a href="#%E6%8C%87%E9%92%88%E7%9A%84%E5%81%8F%E7%A7%BB">指针的偏移</a></li>
+</ul>
+</li>
+<li><a href="#%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E7%94%B3%E8%AF%B7">动态内存申请</a></li>
+<li><a href="#c%E8%AF%AD%E8%A8%80%E4%B8%ADc%E7%9A%84%E5%BC%95%E7%94%A8">C语言中C++的引用</a></li>
+<li><a href="#%E7%BB%93%E6%9E%84%E4%BD%93%E5%AE%9A%E4%B9%89%E6%97%B6%E7%9A%84%E5%B0%8F%E7%BB%86%E8%8A%82%E5%8C%BA%E5%88%AB%E5%AF%B9%E6%AF%94-typedef">结构体定义时的小细节区别对比-typedef</a></li>
+</ul>
+</li>
+<li><a href="#%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B%E5%85%B3%E7%B3%BB">文件类型关系</a></li>
+<li><a href="#%E9%80%BB%E8%BE%91%E7%BB%93%E6%9E%84%E4%B8%8E%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84">逻辑结构与存储结构</a>
+<ul>
+<li><a href="#%E7%BA%BF%E6%80%A7%E8%A1%A8">线性表</a></li>
+<li><a href="#%E5%8D%95%E9%93%BE%E8%A1%A8">单链表</a></li>
+<li><a href="#%E6%A0%88">栈</a></li>
+</ul>
+</li>
+<li><a href="#%E4%B8%A4%E7%A7%8D%E9%87%8D%E8%A6%81%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%80%9D%E7%BB%B4">两种重要的计算机思维</a>
+<ul>
+<li><a href="#%E9%80%92%E5%BD%92-%E9%80%86%E5%90%91%E6%80%9D%E8%80%83">递归-逆向思考</a></li>
+<li><a href="#%E5%88%86%E6%B2%BB-%E5%8C%96%E7%B9%81%E4%B8%BA%E7%AE%80">分治-化繁为简</a></li>
+</ul>
+</li>
+<li><a href="#for%E5%BE%AA%E7%8E%AF%E7%9A%84%E5%87%A0%E7%A7%8D%E4%B9%A6%E5%86%99%E6%96%B9%E6%B3%95">for循环的几种书写方法</a>
+<ul>
+<li><a href="#%E4%B8%8B%E6%A0%87%E5%BE%AA%E7%8E%AF">下标循环</a></li>
+<li><a href="#%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%BE%AA%E7%8E%AF">迭代器循环</a></li>
+<li><a href="#forauto-ite-array">for(auto ite : array)</a></li>
+</ul>
+</li>
+<li><a href="#%E5%9F%BA%E6%9C%AC%E7%9A%84%E8%AF%AD%E6%B3%95">基本的语法</a>
+<ul>
+<li><a href="#c%E5%8C%BF%E5%90%8D%E5%87%BD%E6%95%B0">C++匿名函数</a></li>
+</ul>
+</li>
+<li><a href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">数据类型</a></li>
+<li><a href="#%E5%87%BD%E6%95%B0">函数</a>
+<ul>
+<li><a href="#%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0">定义函数</a></li>
+<li><a href="#%E5%87%BD%E6%95%B0%E5%88%86%E7%B1%BB">函数分类</a></li>
+<li><a href="#%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0">函数参数</a></li>
+<li><a href="#%E8%B0%83%E7%94%A8%E5%87%BD%E6%95%B0%E4%B8%8E%E9%80%92%E5%BD%92%E8%B0%83%E7%94%A8">调用函数与递归调用</a></li>
+<li><a href="#%E6%8C%87%E9%92%88%E5%8F%82%E6%95%B0%E8%B0%83%E7%94%A8">指针参数调用</a></li>
+<li><a href="#lambda-%E5%87%BD%E6%95%B0%E4%B8%8E%E8%A1%A8%E8%BE%BE%E5%BC%8F">Lambda 函数与表达式</a></li>
+<li><a href="#c-%E6%95%B0%E5%AD%A6%E8%BF%90%E7%AE%97">C++ 数学运算</a></li>
+<li><a href="#c%E4%B8%AD%E7%9B%B4%E6%8E%A5%E8%B0%83%E7%94%A8%E7%9A%84%E5%87%BD%E6%95%B0">C++中直接调用的函数</a></li>
+<li><a href="#%E5%B8%B8%E7%94%A8%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%87%BD%E6%95%B0">常用的字符串函数</a></li>
+</ul>
+</li>
+<li><a href="#%E6%8C%87%E9%92%88">指针</a>
+<ul>
+<li><a href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%8C%87%E9%92%88">什么是指针？</a></li>
+<li><a href="#%E6%95%B0%E7%BB%84%E6%8C%87%E9%92%88">数组指针</a></li>
+<li><a href="#%E7%BB%93%E6%9E%84%E4%BD%93%E6%8C%87%E9%92%88">结构体指针</a></li>
+<li><a href="#%E5%87%BD%E6%95%B0%E6%8C%87%E9%92%88">函数指针</a></li>
+<li><a href="#%E6%B0%B4%E7%85%AE%E6%98%93%E6%B7%B7%E6%8C%87%E9%92%88">水煮易混指针</a></li>
+</ul>
+</li>
+<li><a href="#%E7%BB%93%E6%9E%84%E4%BD%93">结构体</a></li>
+<li><a href="#%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F%E4%B8%8E%E5%AE%8F">全局变量与宏</a>
+<ul>
+<li><a href="#%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F">全局变量</a></li>
+<li><a href="#%E9%9D%99%E6%80%81%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F">静态全局变量</a></li>
+<li><a href="#%E7%BC%96%E8%AF%91%E9%A2%84%E5%A4%84%E7%90%86%E4%B8%8E%E5%AE%8F">编译预处理与宏</a></li>
+<li><a href="#ifndef%E7%9A%84%E7%94%A8%E6%B3%95">#ifndef的用法</a></li>
+<li><a href="#const%E5%85%B3%E9%94%AE%E5%AD%97">const关键字</a></li>
+</ul>
+</li>
+<li><a href="#c%E7%9A%84%E5%BC%95%E7%94%A8">C++的引用</a>
+<ul>
+<li><a href="#%E5%BC%95%E7%94%A8%E4%BD%9C%E4%B8%BA%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0">引用作为函数的参数</a></li>
+<li><a href="#%E5%BC%95%E7%94%A8%E4%BD%9C%E4%B8%BA%E5%87%BD%E6%95%B0%E7%9A%84%E8%BF%94%E5%9B%9E%E5%80%BC">引用作为函数的返回值</a></li>
+<li><a href="#%E5%BC%95%E7%94%A8%E7%9A%84%E6%9C%AC%E8%B4%A8">引用的本质</a></li>
+</ul>
+</li>
+<li><a href="#%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D">动态内存分配</a>
+<ul>
+<li><a href="#malloc">malloc</a></li>
+<li><a href="#calloc">calloc</a></li>
+<li><a href="#memset%E5%87%BD%E6%95%B0">memset函数</a></li>
+</ul>
+</li>
+<li><a href="#%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C">文件操作</a>
+<ul>
+<li><a href="#%E5%88%9D%E8%AF%86%E6%96%87%E4%BB%B6">初识文件</a></li>
+</ul>
+</li>
+<li><a href="#%E7%BC%96%E7%A0%81-%E8%BF%90%E7%AE%97%E4%B8%8E%E5%8F%98%E9%87%8F">编码、运算与变量</a>
+<ul>
+<li><a href="#%E8%A1%A5%E7%A0%81%E7%9A%84%E4%BD%9C%E7%94%A8">补码的作用</a></li>
+<li><a href="#%E5%8F%8D%E7%A0%81%E7%9A%84%E4%BD%9C%E7%94%A8">反码的作用</a></li>
+<li><a href="#int%E6%95%B0%E5%80%BC%E5%9E%8B">int数值型</a></li>
+<li><a href="#%E6%B5%AE%E7%82%B9%E5%9E%8B%E6%95%B0%E6%8D%AE">浮点型数据</a></li>
+<li><a href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E9%87%8F">字符串常量</a></li>
+<li><a href="#%E4%BD%8D%E8%BF%90%E7%AE%97">位运算</a></li>
+</ul>
+</li>
+<li><a href="#c-%E5%9F%BA%E6%9C%AC%E7%9A%84%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA">C++ 基本的输入输出</a>
+<ul>
+<li><a href="#io-%E5%BA%93%E5%A4%B4%E6%96%87%E4%BB%B6">I/O 库头文件</a></li>
+</ul>
+</li>
+<li><a href="#standard-template-library-stl">Standard Template Library-STL</a>
+<ul>
+<li><a href="#stl%E5%85%AD%E5%A4%A7%E9%83%A8%E4%BB%B6">STL六大部件</a></li>
+<li><a href="#vector">vector</a>
+<ul>
+<li><a href="#sizeempty">size/empty</a></li>
+<li><a href="#lear">lear</a></li>
+<li><a href="#%E8%BF%AD%E4%BB%A3%E5%99%A8">迭代器</a></li>
+<li><a href="#beginend">begin/end</a></li>
+<li><a href="#frontback">front/back</a></li>
+<li><a href="#push_back-and-pop_back">push_back() and pop_back()</a></li>
+</ul>
+</li>
+<li><a href="#queue">queue</a>
+<ul>
+<li><a href="#%E5%BE%AA%E7%8E%AF%E9%98%9F%E5%88%97-queue">循环队列 queue</a>
+<ul>
+<li><a href="#push">push</a></li>
+<li><a href="#pop">pop</a></li>
+<li><a href="#front">front</a></li>
+<li><a href="#back">back</a></li>
+</ul>
+</li>
+<li><a href="#%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97-priority_queue">优先队列 priority_queue</a>
+<ul>
+<li><a href="#push-2">push</a></li>
+<li><a href="#pop-2">pop</a></li>
+<li><a href="#top">top</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#stack">stack</a>
+<ul>
+<li><a href="#push-3">push</a></li>
+<li><a href="#pop-3">pop</a></li>
+</ul>
+</li>
+<li><a href="#deque">deque</a>
+<ul>
+<li><a href="#beginend-2">begin/end</a></li>
+<li><a href="#frontback-2">front/back</a></li>
+<li><a href="#push_back">push_back</a></li>
+<li><a href="#push_front">push_front</a></li>
+<li><a href="#pop_back">pop_back</a></li>
+<li><a href="#pop_front">pop_front</a></li>
+<li><a href="#clear">clear</a></li>
+</ul>
+</li>
+<li><a href="#set">set</a>
+<ul>
+<li><a href="#sizeemptyclear">size/empty/clear</a></li>
+<li><a href="#%E8%BF%AD%E4%BB%A3%E5%99%A8-2">迭代器</a></li>
+<li><a href="#beginend-3">begin/end</a></li>
+<li><a href="#insert">insert</a></li>
+<li><a href="#find">find</a></li>
+<li><a href="#lower_boundupper_bound">lower_bound/upper_bound</a></li>
+<li><a href="#erase">erase</a></li>
+<li><a href="#count">count</a></li>
+</ul>
+</li>
+<li><a href="#map">map</a>
+<ul>
+<li><a href="#sizeemptyclearbeginend">size/empty/clear/begin/end</a></li>
+<li><a href="#inserterase">insert/erase</a></li>
+<li><a href="#find-2">find</a></li>
+<li><a href="#%E6%93%8D%E4%BD%9C%E7%AC%A6">[]操作符</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E5%B8%B8%E7%94%A8%E5%BA%93%E5%87%BD%E6%95%B0">常用库函数</a>
+<ul>
+<li><a href="#%E5%B8%B8%E7%94%A8%E5%BA%93%E5%87%BD%E6%95%B0-2">常用库函数</a>
+<ul>
+<li><a href="#reverse-%E7%BF%BB%E8%BD%AC">reverse 翻转</a></li>
+<li><a href="#unique-%E5%8E%BB%E9%87%8D">unique 去重</a></li>
+<li><a href="#random_shuffle-%E9%9A%8F%E6%9C%BA%E6%89%93%E4%B9%B1">random_shuffle 随机打乱</a></li>
+<li><a href="#sort">sort</a></li>
+<li><a href="#lower_boundupper_bound-%E4%BA%8C%E5%88%86">lower_bound/upper_bound 二分</a></li>
+</ul>
+</li>
+<li><a href="#string%E5%87%BD%E6%95%B0">string函数</a>
+<ul>
+<li><a href="#string%E7%9A%84%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E7%9A%84%E5%BD%A2%E5%BC%8F">string的构造函数的形式</a></li>
+<li><a href="#string%E7%9A%84%E5%A4%A7%E5%B0%8F%E5%92%8C%E5%AE%B9%E9%87%8F">string的大小和容量：</a></li>
+<li><a href="#string%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%AF%94%E8%BE%83">string的字符串比较：</a></li>
+<li><a href="#string%E7%9A%84%E6%8F%92%E5%85%A5push_back-%E5%92%8C-insert">string的插入：push_back() 和 insert()</a></li>
+<li><a href="#string%E7%9A%84%E9%81%8D%E5%8E%86%E5%80%9F%E5%8A%A9%E8%BF%AD%E4%BB%A3%E5%99%A8-%E6%88%96%E8%80%85-%E4%B8%8B%E6%A0%87%E6%B3%95">string的遍历：借助迭代器 或者 下标法</a></li>
+<li><a href="#string%E7%9A%84%E5%88%A0%E9%99%A4erase">string的删除：erase()</a></li>
+<li><a href="#string%E7%9A%84%E5%AD%97%E7%AC%A6%E6%9B%BF%E6%8D%A2">string的字符替换：</a></li>
+<li><a href="#string%E7%9A%84%E5%A4%A7%E5%B0%8F%E5%86%99%E8%BD%AC%E6%8D%A2tolower%E5%92%8Ctoupper%E5%87%BD%E6%95%B0-%E6%88%96%E8%80%85-stl%E4%B8%AD%E7%9A%84transform%E7%AE%97%E6%B3%95">string的大小写转换：tolower()和toupper()函数 或者 STL中的transform算法</a></li>
+<li><a href="#string%E7%9A%84%E6%9F%A5%E6%89%BEfind">string的查找：find</a></li>
+<li><a href="#string%E7%9A%84%E6%8E%92%E5%BA%8Fsortsbegin-send">string的排序：sort(s.begin( ),s.end( ))</a></li>
+<li><a href="#string%E7%9A%84%E5%88%86%E5%89%B2%E6%88%AA%E5%8F%96%E5%AD%97%E7%AC%A6%E4%B8%B2strtok-substr">string的分割/截取字符串：strtok() &amp; substr()</a></li>
+</ul>
+</li>
+<li><a href="#c%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0">C语言中的字符串处理函数</a>
+<ul>
+<li><a href="#strlen">strlen</a></li>
+<li><a href="#strcpy">strcpy</a></li>
+<li><a href="#strcat">strcat</a></li>
+<li><a href="#strcmp">strcmp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E7%A8%8B%E5%BA%8F%E4%B8%AD%E7%9A%84%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95">程序中的科学计数法</a></li>
+<li><a href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1">面向对象</a></li>
+<li><a href="#vs-code-%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE">VS Code 基本配置</a>
+<ul>
+<li><a href="#%E7%BC%96%E8%AF%91cc%E7%A8%8B%E5%BA%8F">编译C/C++程序</a></li>
+<li><a href="#%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF">常见错误</a></li>
+<li><a href="#%E7%BC%96%E8%AF%91python%E7%A8%8B%E5%BA%8F-jupyter-lab">编译Python程序-jupyter lab</a></li>
+</ul>
+</li>
+<li><a href="#%E7%BB%8F%E5%85%B8%E6%A6%82%E5%BF%B5%E8%BE%A8%E6%9E%90">经典概念辨析</a>
+<ul>
+<li><a href="#%E6%A0%87%E8%AF%86%E7%AC%A6%E5%92%8C%E5%85%B3%E9%94%AE%E5%AD%97">标识符和关键字</a></li>
+<li><a href="#%E5%8F%98%E9%87%8F%E7%9A%84%E5%A3%B0%E6%98%8E%E5%92%8C%E5%AE%9A%E4%B9%89">变量的声明和定义</a></li>
+<li><a href="#%E5%87%BD%E6%95%B0%E7%9A%84%E5%A3%B0%E6%98%8E%E5%92%8C%E5%AE%9A%E4%B9%89">函数的声明和定义</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#c%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A899%E9%A2%98%E5%A4%9C%E6%B7%B1%E4%BA%BA%E9%9D%99%E5%86%99%E7%AE%97%E6%B3%95">c++零基础入门99题——夜深人静写算法</a>
+<ul>
+<li><a href="#729-730%E9%94%99%E8%AF%AF%E6%80%BB%E7%BB%93%E4%B8%8E%E5%A4%8D%E7%9B%98%E5%BC%BA%E5%9F%BA%E8%AE%A1%E5%88%92">7.29-7.30错误总结与复盘（强基计划）</a></li>
+<li><a href="#8%E6%9C%88-10%E9%94%99%E8%AF%AF%E6%80%BB%E7%BB%93%E4%B8%8E%E5%A4%8D%E7%9B%98%E5%BC%BA%E5%9F%BA%E8%AE%A1%E5%88%92">8月-10错误总结与复盘（强基计划）</a></li>
+</ul>
+</li>
+</ul>
+
+                            </div>
+                            
+                                
+                                    
+                                        <!--en-->
+                                        <section class="post-copyright en">
+                                            <p class="copyright-item">
+                                                <span>Author:</span>
+                                                <span>Mungeryang写字的地方</span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>Permalink:</span>
+                                                <span><a href="https://Mungeryang.github.io/post/cc-for-everyonr/">https://Mungeryang.github.io/post/cc-for-everyonr/</a></span>
+                                            </p>
+
+                                            <p class="copyright-item">
+                                                <span>License:</span>
+                                                <span>MIT License</span>
+                                            </p>
+                                        </section>
+                                        
+                                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://Mungeryang.github.io/post/cc-for-everyonr/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://Mungeryang.github.io/post/cc-for-everyonr/&sharesource=qzone&title= C/C++  FOR EVERYONE  &pics=https://Mungeryang.github.io/images/avatar.png?v=1696728951294&summary="><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://Mungeryang.github.io/post/cc-for-everyonr/&sharesource=weibo&title= C/C++  FOR EVERYONE   + " - " + &pic="https://Mungeryang.github.io/images/avatar.png?v=1696728951294 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://Mungeryang.github.io/tag/tech/">#
+                                                技术文集
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://Mungeryang.github.io/post/ren-zheng-fei-wen-ji-one/">
+                                                                                            任正非文集|我的父亲母亲
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://Mungeryang.github.io/post/ce-shi-wen-zhang/">
+                                                                                                    测试文章
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                                            
+            </div>
+    </div>
+    </div>
+    </div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                    <div class="Like">
+                        <div class="tip" data-tooltip="Do you like it?">
+                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
+                        aria-hidden="true">
+                        <use xlink:href="#like"></use>
+                    </svg><b class="like_text" id="star"></b></a>
+                        </div>
+                    </div>
+                    
+                        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+                            
+                                <b id="hitokoto"></b><br>
+                                
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        Mungeryang写字的地方 &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="https://github.com/Mungeryang" target="_blank">
+                                                Munger
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                on
+            </div>
+            
+                <div id="version" style="display:none;">
+                    1.7.6
+                </div>
+                
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+            <script src='https://fastly.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
+            
+                <script>
+                    
+                    
+                    loadlive2d();
+                    
+                    
+                    hitokoto();
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    CheckVersion();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1696728951294);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>
